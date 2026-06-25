@@ -1,0 +1,6 @@
+[
+    {"faculty": "Art", "course-id": 1, "course-name": "Art History", "credit-points": 50},
+    {"faculty": "Art", "course-id": 2, "course-name": "Fine Art", "credit-points": 30},
+    {"faculty": "Design", "course-id": 3, "course-name": "Graphic Design", "credit-points": 70},
+    {"faculty": "English", "course-id": 4, "course-name": "Creative Writing", "credit-points": 70}
+]

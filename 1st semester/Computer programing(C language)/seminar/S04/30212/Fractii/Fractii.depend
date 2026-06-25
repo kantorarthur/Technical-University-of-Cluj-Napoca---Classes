@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1732026100 source:d:\studenti\pc2024\seminar\s04\30212\fractii\main.c
+	<stdio.h>
+	"fractii.h"
+
+1732026972 d:\studenti\pc2024\seminar\s04\30212\fractii\fractii.h
+
+1732027470 source:d:\studenti\pc2024\seminar\s04\30212\fractii\fractii.c
+	"fractii.h"
+	<stdio.h>
+

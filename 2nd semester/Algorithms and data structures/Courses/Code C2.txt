@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _node{
+    int key;
+    struct _node *prev;
+    struct _node *next;
+}NodeDL;
+
+typedef struct {
+    NodeDL *first;
+    NodeDL *last;
+}DLLIST;
+
+DLLIST *creeazaListaVida(){
+    DLLIST *L = (DLLIST*)calloc(1, sizeof(DLLIST));
+    L->first = NULL;
+    L->last = NULL;
+    return L;
+}
+
+NodeDL * nodNou(int key){
+    NodeDL *p = (NodeDL *) calloc(1, sizeof(NodeDL));
+    p->key = key;
+    p->next = NULL;
+    p->prev = NULL;
+    return p;
+}
+
+int isEmpty(DLLIST *L){
+    if (L->first == NULL && L->last == NULL) return 1;
+    else return 0;
+}
+
+void insertFirst(DLLIST *L, int key){
+    NodeDL *p = nodNou(key);
+    if (isEmpty(L)){
+        L->first = L->last = p;
+    }
+    else{
+        p->next = L->first;
+        L->first->prev = p;
+        L->first = p;
+    }
+}
+
+void printList(DLLIST *L){
+    printf("\nLista (first --> last): ");
+    for (NodeDL *p = L->first; p != NULL; p=p->next)
+        printf("%d ", p->key);
+}
+
+void insertLast(DLLIST *L, int key){
+    NodeDL *p = nodNou(key);
+    if (isEmpty(L)){
+        L->first = L->last = p;
+    }
+    else{
+        L->last->next = p;
+        p->prev = L->last;
+        L->last = p;
+    }
+}
+
+NodeDL *search(DLLIST *L, int crtVal){
+    NodeDL *p = L->first;
+    while(p!=NULL && p->key != crtVal) p = p->next;
+    return p;
+}
+
+void insertAfter(DLLIST *L, int crtVal, int newVal){
+    NodeDL *p = search(L, crtVal);
+    if (p!=NULL) {
+        if (p == L->last) insertLast(L, newVal);
+        else {
+            NodeDL *q = nodNou(newVal);
+            //iseram pe q dupa p
+            q->prev = p;
+            q->next = p->next;
+            p->next = q;
+            q->next->prev = q;
+        }
+    }
+    else{
+        printf("Nodul %d nu exista in lista, bye bye !", crtVal);
+    }
+}
+
+void printListInvers(DLLIST *L){
+    printf("Lista (last --> first): ");
+    NodeDL *p=L->last;
+    while (p!=NULL)
+    {
+        printf("%d ",p->key);
+        p=p->prev;
+    }
+    printf("\n");
+}
+
+int main() {
+    printf("Hello, World!\n");
+    DLLIST *L = creeazaListaVida();
+    insertFirst(L, 10);
+    insertFirst(L, 11);
+    insertLast(L, 15);
+    printList(L);
+    insertAfter(L, 11, 3);
+    insertAfter(L,15, 7);
+    printListInvers(L);
+    printList(L);
+    NodeDL *p = search(L, 110);
+    if (p!=NULL)
+        printf("\nAm gasit nodul !");
+    else
+        printf("\nNodul nu se afla in lista !");
+    return 0;
+}

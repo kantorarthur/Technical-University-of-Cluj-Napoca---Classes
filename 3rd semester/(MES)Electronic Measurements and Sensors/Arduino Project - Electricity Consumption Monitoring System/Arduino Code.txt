@@ -1,0 +1,148 @@
+#include <EmonLib.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <EEPROM.h>
+
+// ==========================
+// LCD Setup (Default: 16x2)
+// ==========================
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+
+// ==========================
+// Energy Monitor Objects
+// ==========================
+EnergyMonitor emonCurrent;
+EnergyMonitor emonVoltage;
+
+// ==========================
+// Pin Definitions
+// ==========================
+#define VOLTAGE_PIN A1
+#define CURRENT_PIN A0
+#define RELAY_PIN 8
+
+// ==========================
+// Voltage Protection Thresholds
+// ==========================
+#define UNDER_VOLTAGE 190
+#define OVER_VOLTAGE 250
+
+// ==========================
+// Variables
+// ==========================
+unsigned long lastMeasurement = 0;
+unsigned long lastEEPROMWrite = 0;
+unsigned long lastScreenSwitch = 0;
+bool showFirstScreen = true;
+
+float totalEnergy_kWh = 0.0;
+
+// ==========================
+// Setup Function
+// ==========================
+void setup() {
+  lcd.init();
+  lcd.backlight();
+
+  // Initialize sensors
+  emonVoltage.voltage(VOLTAGE_PIN, 215.0, 1.7);  // ZMPT101B calibration
+  emonCurrent.current(CURRENT_PIN, 11);          // SCT-013 calibration (100Ω burden)
+
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, HIGH); // Relay initially ON
+
+  // Splash Screen
+  lcd.setCursor(0, 0);
+  lcd.print(" Power Meter ");
+  lcd.setCursor(0, 1);
+  lcd.print(" UTCN ");
+  delay(2000);
+  lcd.clear();
+
+  // Load total energy from EEPROM
+  EEPROM.get(0, totalEnergy_kWh);
+
+  // Discard initial unstable readings
+  for (int i = 0; i < 10; i++) {
+    emonVoltage.calcVI(20, 2000);
+    emonCurrent.calcVI(20, 2000);
+    delay(100);
+  }
+}
+
+// ==========================
+// Main Loop
+// ==========================
+void loop() {
+  // --- Measure Voltage ---
+  emonVoltage.calcVI(20, 2000);
+  float voltage = emonVoltage.Vrms;
+  if (voltage < 90.0 || voltage > 300.0) voltage = 0.0;
+
+  // --- Measure Current ---
+  emonCurrent.calcVI(20, 2000);
+  float current = emonCurrent.Irms;
+  if (current < 0.0 || current > 10.0) current = 0.0;
+
+  // --- Calculate Power ---
+  float realPower = voltage * current;
+
+  unsigned long now = millis();
+
+  // --- Update Energy (Every 1s) ---
+  if (now - lastMeasurement >= 1000) {
+    float energy_Wh = realPower / 3600.0;
+    totalEnergy_kWh += energy_Wh / 1000.0;
+    lastMeasurement = now;
+  }
+
+  // --- Save to EEPROM (Every 5s) ---
+  if (now - lastEEPROMWrite >= 5000) {
+    EEPROM.put(0, totalEnergy_kWh);
+    lastEEPROMWrite = now;
+  }
+
+  // --- Protection Logic ---
+  bool protectionTriggered = false;
+  if (voltage < UNDER_VOLTAGE || voltage > OVER_VOLTAGE) {
+    digitalWrite(RELAY_PIN, HIGH); // Relay OFF (Cut power)
+    protectionTriggered = true;
+  } else {
+    digitalWrite(RELAY_PIN, LOW); // Relay ON
+  }
+
+  // --- Switch Display Screen (Every 2s) ---
+  if (now - lastScreenSwitch >= 2000) {
+    showFirstScreen = !showFirstScreen;
+    lastScreenSwitch = now;
+    lcd.clear();
+  }
+
+  // --- LCD Display ---
+  if (showFirstScreen) {
+    // First screen: Voltage, Current, Power
+    lcd.setCursor(0, 0);
+    lcd.print("V:");
+    lcd.print((int)voltage);
+    lcd.print(" I:");
+    lcd.print(current, 1);
+
+    lcd.setCursor(0, 1);
+    lcd.print("Power:");
+    lcd.print((int)realPower);
+    lcd.print("W      ");
+  } else {
+    // Second screen: Energy, Status
+    lcd.setCursor(0, 0);
+    lcd.print("E:");
+    lcd.print(totalEnergy_kWh, 2);
+    lcd.print(" kWh  ");
+
+    lcd.setCursor(0, 1);
+    lcd.print("Status:");
+    lcd.print(protectionTriggered ? "CUT " : "OK  ");
+  }
+
+  delay(100);
+}

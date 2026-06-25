@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1731415412 source:d:\studenti\pc2024\seminar\s04\30211\multimi\main.c
+	<stdio.h>
+	"multimi.h"
+
+1731414552 d:\studenti\pc2024\seminar\s04\30211\multimi\multimi.h
+
+1731415408 source:d:\studenti\pc2024\seminar\s04\30211\multimi\multimi.c
+	<stdio.h>
+	"multimi.h"
+

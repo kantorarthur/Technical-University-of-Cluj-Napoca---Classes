@@ -1,0 +1,6 @@
+[
+{"student-id": 1,
+"enrollments": [{"course-id": 3, "final-score": null, "date-enrolled": "2024-04-18", "date-completed": null}, {"course-id": 1, "final-score": null, "date-enrolled": "2025-03-05", "date-completed": null}], "student-name": "Harriet Hill", "date-of-birth": "1970-03-06"},
+{"student-id": 2, "enrollments": [{"course-id": 1, "final-score": null, "date-enrolled": "2025-03-01", "date-completed": null}], "student-name": "Steven Morris", "date-of-birth": "1984-03-05"},
+{"student-id": 3, "enrollments": [{"course-id": null, "final-score": null, "date-enrolled": null, "date-completed": null}], "student-name": "Jenny Mills", "date-of-birth": "1969-11-06"}
+]

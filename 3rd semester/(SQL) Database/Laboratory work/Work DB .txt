@@ -1,0 +1,106 @@
+========= EN =========
+
+1. Count the total number of products: how many rows are in `Production.Product`.
+2. Display the total number of orders from `Sales.SalesOrderHeader`.
+3. Display the total number of customers from `Sales.Customer`.
+4. Display the minimum, maximum, and average `ListPrice` from `Production.Product`.
+5. For each `ProductSubcategoryID`, show the number of products (`COUNT(*)`), ordered descending by that number.
+6. The number of detail lines (`Sales.SalesOrderDetail`) for each `SalesOrderID`.
+7. The total quantity (`SUM(OrderQty)`) from `Sales.SalesOrderDetail`.
+8. The total line value (`SUM(LineTotal)`) from `Sales.SalesOrderDetail`.
+9. For each `ProductID` in `Sales.SalesOrderDetail`, display the total quantity sold.
+10. For each `ProductID`, display the number of distinct orders (`COUNT(DISTINCT SalesOrderID)`).
+11. The number of addresses in `Person.Address` for each `City`, ordered descending.
+12. `MIN`, `MAX`, and `AVG` for `StandardCost` in `Production.ProductCostHistory` grouped by `ProductID`.
+13. In `Purchasing.PurchaseOrderDetail`, show the total purchased quantity per `ProductID`.
+14. In `Purchasing.PurchaseOrderHeader`, show the number of orders per `VendorID`.
+15. Number of products for each `ProductModelID` in `Production.Product`.
+16. (JOIN) Total quantity sold per product name: `Sales.SalesOrderDetail` JOIN `Production.Product` → `Product.Name`, `SUM(OrderQty)`, ordered descending.
+17. (JOIN) Total sales value (`SUM(LineTotal)`) per `Product.Name`.
+18. (JOIN) Number of orders per territory: `Sales.SalesOrderHeader` JOIN `Sales.SalesTerritory` → `Territory.Name`, `COUNT(*)`.
+19. (JOIN) Total order value per territory: `SUM(SubTotal)` from `Sales.SalesOrderHeader` grouped by `SalesTerritory.Name`.
+20. (JOIN) Number of orders per customer: `Sales.SalesOrderHeader` JOIN `Sales.Customer` → `CustomerID`, `COUNT(*)`, ordered descending.
+21. (JOIN) Top 10 products by quantity sold: `Product.Name`, `SUM(OrderQty)`, ordered descending and limited to 10 (you can use only `ORDER BY` and note that you take the top 10 in the client).
+22. (JOIN) For each `ProductSubcategoryID`, total sales value: `SalesOrderDetail` JOIN `Product` (group by subcategory), `SUM(LineTotal)`.
+23. (JOIN) Number of products per category: `Product` JOIN `ProductSubcategory` JOIN `ProductCategory` → `ProductCategory.Name`, `COUNT(Product.ProductID)`.
+24. (JOIN) In `Purchasing`, total quantity purchased per product category: `PurchaseOrderDetail` JOIN `Product` JOIN `ProductSubcategory` JOIN `ProductCategory`.
+25. (JOIN) Number of addresses per state/province: `Person.Address` JOIN `Person.StateProvince` → `StateProvince.Name`, `COUNT(*)`.
+26. (JOIN) Number of customers per territory: `Sales.Customer` JOIN `Sales.SalesTerritory` → `COUNT(CustomerID)`.
+27. (JOIN) Average `SubTotal` value per customer: `SalesOrderHeader` JOIN `Customer` → `AVG(SubTotal)`.
+28. (JOIN) Total sales value per salesperson: `SalesOrderHeader` JOIN `Sales.SalesPerson` → `BusinessEntityID`, `SUM(SubTotal)`.
+29. (JOIN) Number of orders per shipping method: `SalesOrderHeader` JOIN `Purchasing.ShipMethod` → `ShipMethod.Name`, `COUNT(*)`.
+30. (JOIN) Number of products per `CultureID` in `Production.ProductModelProductDescriptionCulture` (group by `CultureID`).
+31. (JOIN) Number of products sold per `ProductModelID`: `SalesOrderDetail` JOIN `Product` → `ProductModelID`, `SUM(OrderQty)`.
+32. (JOIN) Average `UnitPrice` sold per product: `SalesOrderDetail` JOIN `Product` → `AVG(UnitPrice)`.
+33. (JOIN) Total value of discounts applied (using `UnitPriceDiscount` and `OrderQty*UnitPrice*UnitPriceDiscount`) per product (use only aggregation and basic arithmetic).
+34. (JOIN) Number of orders per customer and territory: `SalesOrderHeader` JOIN `Customer` JOIN `SalesTerritory` → `Territory.Name`, `CustomerID`, `COUNT(*)` (order first by territory, then descending by count).
+35. (JOIN) Number of order lines per `SalesOrderNumber`: `SalesOrderHeader` JOIN `SalesOrderDetail` → `COUNT(SalesOrderDetail.SalesOrderID)` grouped by `SalesOrderHeader.SalesOrderNumber`.
+36. (JOIN + HAVING) Products with total quantity sold > 1,000: `Product.Name`, `SUM(OrderQty)` and `HAVING SUM(OrderQty) > 1000`.
+37. (JOIN + HAVING) Customers with more than 10 orders: `CustomerID`, `COUNT(*)` from `SalesOrderHeader` with `HAVING COUNT(*) > 10`.
+38. (JOIN + HAVING) Territories where total sales value exceeds 1,000,000: `SalesTerritory.Name`, `SUM(SubTotal)` + `HAVING`.
+39. (JOIN) Top 5 territories by average `SubTotal` per order (ordered descending).
+40. (JOIN) For each salesperson, number of distinct customers who have ordered: `SalesOrderHeader` JOIN `SalesPerson` → `COUNT(DISTINCT CustomerID)`.
+41. (JOIN) For each product category, average `ListPrice` (`AVG(ListPrice)`) and number of products.
+42. (JOIN + HAVING) Products with total sales value > 50,000 and at least 100 sold lines: `HAVING SUM(LineTotal) > 50000 AND COUNT(*) >= 100`.
+43. (JOIN) For each `ShipMethod`, average order value (`AVG(SubTotal)`) and number of orders.
+44. (JOIN) For each customer and shipping method: `COUNT(*)` and `SUM(SubTotal)` (group by `CustomerID`, `ShipMethod.Name`).
+45. (JOIN) For each `StateProvince`, number of customers with at least one address in that state (`Customer` JOIN `Person.BusinessEntityAddress` JOIN `Person.Address` JOIN `Person.StateProvince`; count `DISTINCT CustomerID`).
+46. (JOIN) Average, minimum, and maximum `StandardCost` for products per `ProductSubcategoryID` (JOIN with `ProductCostHistory` if you want historical data; otherwise just `Product`).
+47. (JOIN + HAVING) Salespersons with at least 20 processed orders: `SalesPerson.BusinessEntityID`, `COUNT(SalesOrderID)` with `HAVING COUNT(*) >= 20`.
+48. (JOIN) For each customer: total number of order lines and total quantity (`COUNT(SalesOrderDetail.ProductID)`, `SUM(OrderQty)`) — JOIN `SalesOrderHeader` + `SalesOrderDetail`.
+49. (JOIN + HAVING) Territories where the number of active customers (with at least one order) exceeds 100: count `DISTINCT CustomerID` in `SalesOrderHeader` grouped by `SalesTerritory.Name`, `HAVING COUNT(DISTINCT CustomerID) > 100`.
+50. (JOIN) For each product category: number of products sold (number of rows in `SalesOrderDetail` linked to categories via `Product→Subcategory→Category`) and total quantity (`SUM(OrderQty)`), ordered descending by quantity.
+
+
+========= RO =========
+
+1. Numără totalul de produse: câte rânduri sunt în Production.Product.
+2. Afișează numărul de comenzi din Sales.SalesOrderHeader.
+3. Afișează numărul de clienți din Sales.Customer.
+4. Afișează prețul minim, maxim și mediu al ListPrice din Production.Product.
+5. Afișează pentru fiecare ProductSubcategoryID numărul de produse (COUNT(*)), ordonat descrescător după număr.
+6. Numărul de linii de detaliu (Sales.SalesOrderDetail) pe fiecare SalesOrderID.
+7. Suma totală a cantităților (SUM(OrderQty)) din Sales.SalesOrderDetail.
+8. Suma totală a valorii de linie (SUM(LineTotal)) din Sales.SalesOrderDetail.
+9. Pentru fiecare ProductID din Sales.SalesOrderDetail, afișează cantitatea totală vândută.
+10. Pentru fiecare ProductID, afișează numărul de comenzi distincte (COUNT(DISTINCT SalesOrderID)).
+11. Numărul de adrese din Person.Address pe fiecare City, ordonat descrescător.
+12. MIN, MAX, AVG pentru StandardCost în Production.ProductCostHistory grupat pe ProductID.
+13. În Purchasing.PurchaseOrderDetail, cantitatea totală cumpărată pe ProductID.
+14. În Purchasing.PurchaseOrderHeader, numărul de comenzi pe VendorID.
+15. Numărul de produse pe fiecare ProductModelID în Production.Product.
+16. (JOIN) Cantitatea totală vândută pe numele produsului: Sales.SalesOrderDetail JOIN Production.Product → Product.Name, SUM(OrderQty), ordonat desc.
+17. (JOIN) Valoarea totală vândută (SUM(LineTotal)) pe Product.Name.
+18. (JOIN) Numărul de comenzi pe teritoriu: Sales.SalesOrderHeader JOIN Sales.SalesTerritory → Territory.Name, COUNT(*).
+19. (JOIN) Valoarea totală a comenzilor pe teritoriu: SUM(SubTotal) din Sales.SalesOrderHeader grupat pe SalesTerritory.Name.
+20. (JOIN) Numărul de comenzi pe client: Sales.SalesOrderHeader JOIN Sales.Customer → CustomerID, COUNT(*), ordonat desc.
+21. (JOIN) Top 10 produse după cantitate vândută: Product.Name, SUM(OrderQty), ordonat desc și limitat la 10 (poți folosi doar ORDER BY și apoi să menționezi că se iau primele 10 în client).
+22. (JOIN) Pentru fiecare ProductSubcategoryID, valoarea totală vândută: SalesOrderDetail JOIN Product (grup pe subcategorie), SUM(LineTotal).
+23. (JOIN) Numărul de produse pe categorie: Product JOIN ProductSubcategory JOIN ProductCategory → ProductCategory.Name, COUNT(Product.ProductID).
+24. (JOIN) În Purchasing, cantitatea totală cumpărată pe categorie de produs: PurchaseOrderDetail JOIN Product JOIN ProductSubcategory JOIN ProductCategory.
+25. (JOIN) Numărul de adrese per stat/provincie: Person.Address JOIN Person.StateProvince → StateProvince.Name, COUNT(*).
+26. (JOIN) Numărul de clienți pe teritoriu: Sales.Customer JOIN Sales.SalesTerritory → COUNT(CustomerID).
+27. (JOIN) Media valorii SubTotal per client: SalesOrderHeader JOIN Customer → AVG(SubTotal).
+28. (JOIN) Valoarea totală vândută per vânzător (SalesPerson): SalesOrderHeader JOIN Sales.SalesPerson → BusinessEntityID, SUM(SubTotal).
+29. (JOIN) Număr de comenzi per metodă de expediere: SalesOrderHeader JOIN Purchasing.ShipMethod → ShipMethod.Name, COUNT(*).
+30. (JOIN) Număr de produse pe CultureID în Production.ProductModelProductDescriptionCulture (grp pe CultureID).
+31. (JOIN) Număr de produse vândute per ProductModelID: SalesOrderDetail JOIN Product → ProductModelID, SUM(OrderQty).
+32. (JOIN) Media UnitPrice vândut pe fiecare produs: SalesOrderDetail JOIN Product → AVG(UnitPrice).
+33. (JOIN) Valoarea totală a reducerilor aplicate (dacă folosești UnitPriceDiscount și OrderQty*UnitPrice*UnitPriceDiscount) pe produs (atenție: folosește doar agregare și aritmetică simplă).
+34. (JOIN) Numărul de comenzi pe client și teritoriu: SalesOrderHeader JOIN Customer JOIN SalesTerritory → Territory.Name, CustomerID, COUNT(*) (ordonează întâi după teritoriu, apoi desc după număr).
+35. (JOIN) Numărul de linii de comandă pe fiecare SalesOrderNumber: SalesOrderHeader JOIN SalesOrderDetail → COUNT(SalesOrderDetail.SalesOrderID) grupat pe SalesOrderHeader.SalesOrderNumber.
+36. (JOIN + HAVING) Produsele cu cantitate totală vândută > 1.000: Product.Name, SUM(OrderQty) și HAVING SUM(OrderQty) > 1000.
+37. (JOIN + HAVING) Clienți cu mai mult de 10 comenzi: CustomerID, COUNT(*) din SalesOrderHeader cu HAVING COUNT(*) > 10.
+38. (JOIN + HAVING) Teritorii unde valoarea totală vândută depășește 1.000.000: SalesTerritory.Name, SUM(SubTotal) + HAVING.
+39. (JOIN) Top 5 teritorii după AVG(SubTotal) per comandă (ordonat desc).
+40. (JOIN) Pentru fiecare vânzător, numărul de clienți diferiți care au comandat: SalesOrderHeader JOIN SalesPerson → COUNT(DISTINCT CustomerID).
+41. (JOIN) Pentru fiecare categorie de produs, prețul mediu de listă (AVG(ListPrice)) și numărul de produse.
+42. (JOIN + HAVING) Produse cu valoare totală vândută > 50.000 și cu cel puțin 100 de linii vândute: HAVING SUM(LineTotal) > 50000 AND COUNT(*) >= 100.
+43. (JOIN) Pentru fiecare ShipMethod, valoarea medie a unei comenzi (AVG(SubTotal)) și numărul de comenzi.
+44. (JOIN) Pentru fiecare client și metodă de expediere: COUNT(*) și SUM(SubTotal) (grup pe CustomerID, ShipMethod.Name).
+45. (JOIN) Pentru fiecare StateProvince, numărul de clienți care au cel puțin o adresă în acel stat (folosește Customer JOIN Person.BusinessEntityAddress JOIN Person.Address JOIN Person.StateProvince; numără DISTINCT CustomerID).
+46. (JOIN) Media, minima și maxima StandardCost pentru produse pe ProductSubcategoryID (JOIN la ProductCostHistory dacă vrei istoric; altfel doar Product).
+47. (JOIN + HAVING) Vânzători cu cel puțin 20 de comenzi procesate: SalesPerson.BusinessEntityID, COUNT(SalesOrderID) cu HAVING COUNT(*) >= 20.
+48. (JOIN) Pentru fiecare client: numărul total de linii comandă și cantitatea totală (COUNT(SalesOrderDetail.ProductID), SUM(OrderQty)) — JOIN SalesOrderHeader + SalesOrderDetail.
+49. (JOIN + HAVING) Teritorii unde numărul de clienți activi (cu cel puțin o comandă) depășește 100: numără DISTINCT CustomerID în SalesOrderHeader grupat pe SalesTerritory.Name, HAVING COUNT(DISTINCT CustomerID) > 100.
+50. (JOIN) Pentru fiecare categorie de produs: numărul de produse vândute (număr de rânduri în SalesOrderDetail care corespund categoriilor via Product→Subcategory→Category) și cantitatea totală (SUM(OrderQty)), ordonat desc după cantitate.

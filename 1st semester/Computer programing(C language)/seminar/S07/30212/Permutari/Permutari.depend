@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1733845023 source:d:\studenti\pc2024\seminar\s06\30215\permutari\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1736869538 source:d:\studenti\pc2024\seminar\s07\30212\permutari\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

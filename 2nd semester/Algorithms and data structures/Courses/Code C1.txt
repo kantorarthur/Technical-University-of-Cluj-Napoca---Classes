@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * Operatii pe lista simplu inlantuita implementata cu first;
+ * Creare lista vida
+ * insertFirst() inserare pe prima pozitie
+ * insertLast() inserare pe ultima pozitie
+ * insertAfter(x) inserare dupa nodul care are cheia x
+ * search(x) : cautare
+ * deleteFirst()
+ * deleteLast()
+ * deleteKey(x)
+ */
+
+typedef struct node{
+    int k;
+    struct node *next;
+}NodeT;
+
+void afiseazaLista(NodeT *first);
+
+NodeT *nodNou(int k){
+    NodeT *p = (NodeT*) malloc(sizeof(NodeT));
+    p->k = k;
+    p->next = NULL;
+    return p;
+}
+
+//insertFirst
+void insertFirst(NodeT **f, int val){
+    NodeT *p = nodNou(val);
+    if((*f)==NULL) (*f)=p;
+    else{
+        p->next = (*f);
+        *f = p;
+    }
+}
+
+void insertLast(NodeT** first, int val){
+    NodeT* p= nodNou(val);
+    NodeT* q = *first;
+    if ( q == NULL ) *first = p;
+    else {
+        while (q->next != NULL) {
+            q = q->next;
+        }
+        q->next = p;
+    }
+}
+
+void afiseazaLista(NodeT *first){
+    printf("Lista este: ");
+    NodeT *p = first;
+    while(p!=NULL){
+        printf("%d ", p->k);
+        p=p->next;
+    }
+}
+
+NodeT *search(NodeT *first, int val){
+    NodeT *p = first;
+    while(p!=NULL){
+        if(p->k == val) return  p;
+        p=p->next;
+    }
+    return  NULL;
+}
+
+int main(void) {
+    //creaza lista vida reprezentata doar cu first
+    NodeT *first;
+    first = NULL;
+    insertFirst(&first, 10);
+    insertFirst(&first, 20);
+    insertFirst(&first, 30);
+    insertFirst(&first, 20);
+    afiseazaLista(first);
+    insertLast(&first, 50);
+    afiseazaLista(first);
+    return 0;
+}

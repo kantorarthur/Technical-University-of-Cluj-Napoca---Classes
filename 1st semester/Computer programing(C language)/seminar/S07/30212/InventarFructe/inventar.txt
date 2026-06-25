@@ -1,0 +1,5 @@
+mere 345
+pere 27
+kiwi 101
+prune 41
+banane 10

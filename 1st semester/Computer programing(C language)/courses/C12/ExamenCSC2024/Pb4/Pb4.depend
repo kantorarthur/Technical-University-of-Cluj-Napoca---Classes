@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1734436762 source:d:\studenti\pc2024\curs\c12\examencsc2024\pb4\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

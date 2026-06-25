@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1736859756 source:d:\inventarfructe\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+

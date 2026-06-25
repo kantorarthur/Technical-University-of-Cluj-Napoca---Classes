@@ -1,0 +1,1001 @@
+id,car_maker,car_model,color,type
+1,Porsche,Boxster,Blue,diesel
+2,BMW,760,Pink,diesel
+3,BMW,745,Mauv,hybrid
+4,Lincoln,MKX,Teal,diesel
+5,Lexus,GX,Goldenrod,hybrid
+6,GMC,Savana 1500,Crimson,electric
+7,MINI,Cooper Countryman,Crimson,gasoline
+8,Lexus,LS,Mauv,electric
+9,Mitsubishi,Mirage,Blue,diesel
+10,GMC,Savana 2500,Khaki,hybrid
+11,Nissan,Sentra,Purple,diesel
+12,Toyota,4Runner,Puce,gasoline
+13,Kia,Mohave/Borrego,Blue,diesel
+14,Chevrolet,TrailBlazer,Turquoise,electric
+15,GMC,Rally Wagon 1500,Mauv,gasoline
+16,Dodge,Ram 1500,Aquamarine,gasoline
+17,Toyota,Tacoma,Orange,electric
+18,Saturn,Sky,Turquoise,electric
+19,Buick,Electra,Crimson,electric
+20,Ford,Excursion,Khaki,diesel
+21,GMC,1500 Club Coupe,Fuscia,gasoline
+22,Mitsubishi,Pajero,Orange,diesel
+23,Toyota,Solara,Green,hybrid
+24,Lincoln,Mark VIII,Red,hybrid
+25,Mazda,MPV,Goldenrod,diesel
+26,Dodge,Ram Van 3500,Maroon,electric
+27,Chevrolet,G-Series G30,Crimson,hybrid
+28,Ford,Focus,Mauv,diesel
+29,Land Rover,Discovery,Crimson,gasoline
+30,Honda,Accord,Blue,hybrid
+31,Aston Martin,DB9,Maroon,electric
+32,Toyota,Highlander,Pink,diesel
+33,BMW,M5,Fuscia,electric
+34,BMW,8 Series,Goldenrod,electric
+35,Chevrolet,Lumina,Violet,diesel
+36,Oldsmobile,98,Yellow,diesel
+37,Hummer,H1,Khaki,electric
+38,Chevrolet,Suburban 1500,Indigo,electric
+39,Ford,Focus,Mauv,diesel
+40,Volkswagen,Golf,Khaki,gasoline
+41,Audi,R8,Indigo,electric
+42,Pontiac,GTO,Turquoise,hybrid
+43,GMC,Sierra 3500,Teal,hybrid
+44,Buick,Lucerne,Mauv,diesel
+45,Suzuki,Swift,Blue,hybrid
+46,Ford,Courier,Yellow,hybrid
+47,Mazda,Miata MX-5,Indigo,hybrid
+48,Isuzu,Hombre,Crimson,gasoline
+49,Mercedes-Benz,SLK-Class,Goldenrod,diesel
+50,Mazda,Mazda6,Violet,diesel
+51,Subaru,Legacy,Indigo,electric
+52,Acura,MDX,Aquamarine,electric
+53,Pontiac,Firebird,Green,electric
+54,Mercedes-Benz,SLK-Class,Blue,hybrid
+55,Nissan,Armada,Pink,gasoline
+56,Kia,Mohave/Borrego,Green,electric
+57,Ford,Mustang,Mauv,electric
+58,Porsche,914,Red,electric
+59,Aston Martin,V8 Vantage S,Green,hybrid
+60,Mercedes-Benz,C-Class,Goldenrod,gasoline
+61,Nissan,Murano,Maroon,gasoline
+62,Audi,TT,Green,electric
+63,Chevrolet,Express 1500,Maroon,hybrid
+64,Saab,900,Teal,electric
+65,Lexus,IS F,Crimson,diesel
+66,Ford,F250,Violet,electric
+67,Jaguar,XJ Series,Aquamarine,electric
+68,Acura,Legend,Fuscia,gasoline
+69,Ford,Explorer,Puce,hybrid
+70,Dodge,Shadow,Blue,electric
+71,Pontiac,G5,Blue,electric
+72,Chevrolet,3500,Mauv,hybrid
+73,Nissan,Quest,Red,diesel
+74,Volkswagen,Jetta III,Fuscia,diesel
+75,Infiniti,M,Goldenrod,electric
+76,Infiniti,QX56,Green,electric
+77,Spyker,C8,Goldenrod,hybrid
+78,Acura,CL,Green,gasoline
+79,Toyota,4Runner,Pink,gasoline
+80,BMW,M6,Orange,electric
+81,Maserati,Spyder,Orange,diesel
+82,Chevrolet,Suburban,Blue,gasoline
+83,Chevrolet,S10,Orange,hybrid
+84,Chevrolet,Monte Carlo,Red,gasoline
+85,Pontiac,Grand Prix,Pink,electric
+86,BMW,X5,Maroon,diesel
+87,Land Rover,Discovery,Orange,electric
+88,Infiniti,QX56,Goldenrod,electric
+89,Dodge,Dakota Club,Teal,gasoline
+90,Subaru,Legacy,Pink,electric
+91,Buick,Park Avenue,Indigo,gasoline
+92,Chrysler,Town & Country,Teal,diesel
+93,Oldsmobile,Intrigue,Green,hybrid
+94,Hummer,H1,Turquoise,hybrid
+95,GMC,Sierra 1500,Teal,electric
+96,Lamborghini,Murciélago,Khaki,electric
+97,Pontiac,Bonneville,Turquoise,hybrid
+98,Toyota,Tercel,Green,electric
+99,Mercedes-Benz,S-Class,Pink,diesel
+100,Honda,Odyssey,Aquamarine,gasoline
+101,Kia,Sorento,Khaki,diesel
+102,GMC,1500,Khaki,gasoline
+103,Ford,F350,Khaki,hybrid
+104,Chevrolet,Lumina,Orange,diesel
+105,Jeep,Liberty,Turquoise,hybrid
+106,Toyota,Supra,Mauv,electric
+107,Ford,Ranger,Purple,diesel
+108,GMC,Savana 2500,Purple,hybrid
+109,Chrysler,Prowler,Mauv,diesel
+110,Pontiac,Montana SV6,Orange,hybrid
+111,Lincoln,Navigator L,Indigo,hybrid
+112,Nissan,Quest,Mauv,hybrid
+113,Honda,Insight,Turquoise,diesel
+114,Mercury,Grand Marquis,Mauv,gasoline
+115,Buick,Rainier,Blue,diesel
+116,Toyota,MR2,Pink,electric
+117,Toyota,Tacoma,Fuscia,electric
+118,Oldsmobile,Silhouette,Green,gasoline
+119,BMW,5 Series,Puce,electric
+120,Dodge,Intrepid,Yellow,diesel
+121,Mercedes-Benz,R-Class,Fuscia,diesel
+122,Mercedes-Benz,CLK-Class,Goldenrod,electric
+123,Lincoln,Continental,Maroon,hybrid
+124,Honda,Accord,Yellow,diesel
+125,BMW,M5,Teal,hybrid
+126,BMW,3 Series,Turquoise,electric
+127,Oldsmobile,Cutlass,Aquamarine,hybrid
+128,GMC,2500 Club Coupe,Maroon,gasoline
+129,Eagle,Talon,Indigo,electric
+130,BMW,Z4,Goldenrod,electric
+131,Land Rover,Discovery Series II,Red,hybrid
+132,Mercury,Sable,Mauv,diesel
+133,Mitsubishi,GTO,Fuscia,gasoline
+134,Hyundai,Accent,Aquamarine,electric
+135,Mercedes-Benz,M-Class,Orange,diesel
+136,Honda,Fit,Goldenrod,gasoline
+137,Audi,80,Violet,electric
+138,GMC,Suburban 2500,Yellow,hybrid
+139,Nissan,Murano,Aquamarine,gasoline
+140,Volvo,S40,Goldenrod,electric
+141,Mercury,Sable,Purple,electric
+142,Subaru,SVX,Teal,gasoline
+143,Subaru,Forester,Green,electric
+144,GMC,Sierra 3500,Pink,electric
+145,Mercedes-Benz,W201,Aquamarine,diesel
+146,Buick,Century,Purple,hybrid
+147,Chevrolet,Suburban 2500,Puce,gasoline
+148,Pontiac,G3,Goldenrod,diesel
+149,Ford,Tempo,Purple,hybrid
+150,Pontiac,LeMans,Fuscia,electric
+151,Mercedes-Benz,R-Class,Orange,electric
+152,Mercedes-Benz,CLS-Class,Purple,electric
+153,Scion,tC,Indigo,hybrid
+154,Ford,Expedition EL,Orange,hybrid
+155,Chevrolet,Suburban 1500,Red,electric
+156,Mazda,MX-5,Fuscia,gasoline
+157,Jeep,Liberty,Crimson,hybrid
+158,GMC,Savana 2500,Goldenrod,hybrid
+159,Mercedes-Benz,SLK-Class,Red,electric
+160,Dodge,Grand Caravan,Pink,gasoline
+161,Honda,Odyssey,Mauv,gasoline
+162,Toyota,Sienna,Violet,gasoline
+163,Volvo,S40,Indigo,diesel
+164,Bentley,Continental,Red,diesel
+165,Dodge,Nitro,Maroon,gasoline
+166,GMC,Yukon,Pink,electric
+167,Ford,Crown Victoria,Turquoise,diesel
+168,Chevrolet,Express 1500,Green,electric
+169,Nissan,300ZX,Red,hybrid
+170,Pontiac,Grand Prix,Orange,hybrid
+171,Bentley,Continental,Green,hybrid
+172,GMC,2500 Club Coupe,Indigo,electric
+173,Volkswagen,Touareg,Red,electric
+174,Ford,Econoline E350,Red,gasoline
+175,Mazda,Tribute,Red,hybrid
+176,BMW,M3,Fuscia,diesel
+177,Buick,Century,Blue,hybrid
+178,Honda,Civic,Indigo,electric
+179,Chevrolet,Tahoe,Yellow,gasoline
+180,Toyota,Paseo,Indigo,hybrid
+181,Mercedes-Benz,Sprinter 2500,Aquamarine,diesel
+182,Aston Martin,Vantage,Aquamarine,electric
+183,Mazda,B-Series,Turquoise,gasoline
+184,Ford,Expedition,Indigo,hybrid
+185,Volvo,V50,Violet,gasoline
+186,Saturn,L-Series,Maroon,electric
+187,Chevrolet,TrailBlazer,Violet,diesel
+188,Audi,5000S,Aquamarine,gasoline
+189,Volkswagen,Passat,Violet,electric
+190,Kia,Optima,Turquoise,hybrid
+191,Infiniti,QX,Turquoise,gasoline
+192,Hyundai,Sonata,Goldenrod,diesel
+193,Ford,Bronco,Green,hybrid
+194,Ford,Ranger,Teal,diesel
+195,Saab,5-Sep,Fuscia,electric
+196,Infiniti,M,Khaki,electric
+197,Land Rover,LR3,Orange,hybrid
+198,Bentley,Continental Flying Spur,Khaki,gasoline
+199,Mercury,Grand Marquis,Pink,hybrid
+200,Acura,Integra,Aquamarine,gasoline
+201,Kia,Rondo,Green,hybrid
+202,GMC,Sierra 1500,Turquoise,hybrid
+203,Honda,Odyssey,Crimson,diesel
+204,Chevrolet,Monte Carlo,Teal,hybrid
+205,Land Rover,LR2,Turquoise,diesel
+206,Ford,Probe,Orange,electric
+207,Honda,Crosstour,Yellow,electric
+208,BMW,7 Series,Fuscia,gasoline
+209,Toyota,FJ Cruiser,Mauv,hybrid
+210,Mazda,RX-7,Khaki,electric
+211,Chevrolet,Corvette,Red,diesel
+212,Toyota,Xtra,Violet,electric
+213,Dodge,Viper RT/10,Violet,electric
+214,Oldsmobile,88,Puce,diesel
+215,Chevrolet,Traverse,Orange,electric
+216,Jeep,Grand Cherokee,Indigo,diesel
+217,Toyota,Land Cruiser,Puce,diesel
+218,Ford,F-Series,Red,hybrid
+219,Dodge,Ram 2500,Violet,hybrid
+220,Volvo,S60,Crimson,electric
+221,Lincoln,Continental Mark VII,Green,diesel
+222,Porsche,Cayman,Puce,gasoline
+223,Kia,Sportage,Goldenrod,electric
+224,Volkswagen,Eos,Purple,diesel
+225,Buick,Riviera,Fuscia,gasoline
+226,Mercedes-Benz,C-Class,Goldenrod,gasoline
+227,Porsche,911,Blue,electric
+228,Chrysler,PT Cruiser,Crimson,diesel
+229,Audi,S5,Goldenrod,diesel
+230,GMC,Sierra,Puce,electric
+231,Mercury,Villager,Maroon,gasoline
+232,Toyota,Celica,Green,diesel
+233,Toyota,Tacoma,Violet,electric
+234,Acura,CL,Turquoise,hybrid
+235,Mercedes-Benz,M-Class,Puce,gasoline
+236,Chevrolet,Cobalt SS,Violet,hybrid
+237,BMW,M3,Mauv,hybrid
+238,Suzuki,Vitara,Goldenrod,gasoline
+239,Hyundai,Genesis Coupe,Violet,electric
+240,Chevrolet,Express 2500,Pink,hybrid
+241,Chevrolet,Aveo,Green,electric
+242,Chevrolet,Blazer,Violet,diesel
+243,BMW,M3,Orange,gasoline
+244,Dodge,Durango,Puce,electric
+245,Dodge,Ram Van B350,Teal,electric
+246,Ford,Econoline E250,Fuscia,hybrid
+247,Lamborghini,Gallardo,Mauv,diesel
+248,Dodge,Dakota Club,Maroon,diesel
+249,Toyota,Camry Hybrid,Aquamarine,electric
+250,Buick,LeSabre,Red,hybrid
+251,Land Rover,Range Rover,Goldenrod,diesel
+252,Oldsmobile,Silhouette,Turquoise,gasoline
+253,Mazda,Protege,Teal,diesel
+254,Mitsubishi,Mirage,Mauv,electric
+255,GMC,Savana 1500,Goldenrod,diesel
+256,Toyota,Corolla,Green,electric
+257,Pontiac,Fiero,Violet,hybrid
+258,BMW,530,Yellow,electric
+259,Dodge,Challenger,Yellow,gasoline
+260,Mazda,B-Series,Red,hybrid
+261,MG,MGB,Crimson,electric
+262,Jaguar,XJ Series,Puce,hybrid
+263,Chevrolet,Express 1500,Turquoise,diesel
+264,Subaru,Outback,Blue,diesel
+265,BMW,M3,Yellow,hybrid
+266,Volkswagen,Passat,Maroon,electric
+267,Maybach,57,Orange,hybrid
+268,Chevrolet,Corvette,Goldenrod,hybrid
+269,Mazda,Protege,Goldenrod,gasoline
+270,Pontiac,Grand Prix,Violet,gasoline
+271,Mazda,Familia,Turquoise,electric
+272,Infiniti,Q,Pink,hybrid
+273,Mazda,MX-6,Goldenrod,gasoline
+274,Cadillac,Escalade,Aquamarine,gasoline
+275,Porsche,944,Aquamarine,gasoline
+276,Lincoln,MKS,Aquamarine,electric
+277,Mazda,MPV,Yellow,diesel
+278,Bentley,Continental GT,Red,electric
+279,Lotus,Esprit,Violet,electric
+280,Mercedes-Benz,M-Class,Crimson,hybrid
+281,Lamborghini,Gallardo,Crimson,diesel
+282,Lexus,RX,Crimson,diesel
+283,Jeep,Liberty,Puce,electric
+284,Pontiac,Grand Am,Crimson,diesel
+285,Nissan,Pathfinder,Pink,diesel
+286,Chevrolet,Cobalt SS,Purple,electric
+287,Toyota,Sienna,Purple,diesel
+288,BMW,7 Series,Purple,electric
+289,Chevrolet,HHR,Crimson,hybrid
+290,Ford,Probe,Purple,gasoline
+291,Chevrolet,3500,Aquamarine,gasoline
+292,GMC,Safari,Pink,gasoline
+293,Pontiac,G3,Teal,diesel
+294,Mercury,Tracer,Goldenrod,hybrid
+295,Lotus,Elise,Yellow,diesel
+296,Land Rover,Range Rover,Khaki,hybrid
+297,Mercury,Grand Marquis,Pink,gasoline
+298,Suzuki,Grand Vitara,Orange,diesel
+299,Ford,Econoline E250,Crimson,electric
+300,Mazda,Mazda6,Yellow,gasoline
+301,Mercury,Villager,Green,gasoline
+302,Mercury,Tracer,Crimson,hybrid
+303,Jaguar,XF,Khaki,diesel
+304,Volkswagen,GTI,Green,diesel
+305,Buick,Park Avenue,Violet,gasoline
+306,Honda,Pilot,Turquoise,gasoline
+307,Isuzu,Hombre Space,Red,electric
+308,Oldsmobile,Toronado,Goldenrod,hybrid
+309,BMW,X3,Turquoise,electric
+310,GMC,Vandura G1500,Fuscia,electric
+311,GMC,Envoy,Maroon,electric
+312,Pontiac,Grand Am,Khaki,electric
+313,Ford,Ranger,Purple,hybrid
+314,Aston Martin,Rapide,Puce,hybrid
+315,Bentley,Arnage,Maroon,electric
+316,Ford,Ranger,Violet,gasoline
+317,Chevrolet,Suburban,Indigo,gasoline
+318,Ferrari,430 Scuderia,Fuscia,electric
+319,Mazda,MPV,Red,electric
+320,Isuzu,Axiom,Indigo,gasoline
+321,Oldsmobile,Achieva,Goldenrod,diesel
+322,Kia,Soul,Aquamarine,gasoline
+323,Lincoln,Continental,Blue,electric
+324,Dodge,Viper,Mauv,hybrid
+325,Jeep,Grand Cherokee,Yellow,diesel
+326,Ford,Windstar,Blue,electric
+327,Toyota,4Runner,Khaki,electric
+328,Chrysler,New Yorker,Violet,gasoline
+329,Mercury,Tracer,Blue,hybrid
+330,Mazda,Protege,Indigo,gasoline
+331,GMC,Terrain,Indigo,hybrid
+332,GMC,Sierra 3500,Red,hybrid
+333,Ford,Probe,Indigo,diesel
+334,Chevrolet,Venture,Indigo,diesel
+335,Lexus,RX,Yellow,diesel
+336,Cadillac,DeVille,Red,gasoline
+337,Ford,Windstar,Pink,diesel
+338,Aston Martin,DBS,Khaki,hybrid
+339,Smart,Fortwo,Green,hybrid
+340,Buick,Skylark,Orange,hybrid
+341,Chevrolet,Corvette,Khaki,gasoline
+342,Bentley,Continental,Mauv,hybrid
+343,Scion,xB,Goldenrod,electric
+344,Mitsubishi,Truck,Yellow,gasoline
+345,Honda,Element,Yellow,electric
+346,Audi,A6,Yellow,diesel
+347,Chevrolet,Express 3500,Aquamarine,hybrid
+348,Chrysler,Pacifica,Purple,diesel
+349,Dodge,Dakota Club,Green,hybrid
+350,Chevrolet,Tahoe,Yellow,gasoline
+351,Pontiac,Montana,Aquamarine,electric
+352,Volkswagen,Tiguan,Purple,hybrid
+353,Mitsubishi,Raider,Green,gasoline
+354,Mercury,Mountaineer,Red,hybrid
+355,Mercedes-Benz,E-Class,Crimson,hybrid
+356,Ford,F-Series,Purple,hybrid
+357,Dodge,Challenger,Aquamarine,diesel
+358,Ferrari,612 Scaglietti,Turquoise,hybrid
+359,Chevrolet,Cruze,Indigo,gasoline
+360,Chevrolet,2500,Violet,gasoline
+361,Chevrolet,Express 1500,Green,gasoline
+362,Kia,Sephia,Aquamarine,diesel
+363,Chevrolet,G-Series G10,Puce,diesel
+364,Honda,del Sol,Red,diesel
+365,Cadillac,DeVille,Red,diesel
+366,Hyundai,Veracruz,Violet,diesel
+367,Oldsmobile,Ciera,Violet,diesel
+368,Lamborghini,Diablo,Yellow,hybrid
+369,Ford,Ranger,Orange,gasoline
+370,Mitsubishi,Pajero,Blue,gasoline
+371,Bentley,Azure,Purple,electric
+372,Lamborghini,Countach,Goldenrod,gasoline
+373,Nissan,Frontier,Yellow,diesel
+374,Bentley,Continental Flying Spur,Puce,diesel
+375,GMC,Savana 2500,Pink,gasoline
+376,GMC,Vandura G1500,Khaki,diesel
+377,MINI,Cooper,Violet,hybrid
+378,GMC,Yukon,Yellow,gasoline
+379,Buick,Regal,Aquamarine,electric
+380,Aston Martin,Vanquish S,Khaki,gasoline
+381,Pontiac,Sunfire,Red,hybrid
+382,Ford,Th!nk,Red,hybrid
+383,Honda,Civic,Indigo,electric
+384,Toyota,Tacoma,Khaki,diesel
+385,Infiniti,FX,Maroon,gasoline
+386,Honda,Odyssey,Turquoise,diesel
+387,Buick,Park Avenue,Khaki,diesel
+388,Mazda,MX-6,Turquoise,hybrid
+389,Kia,Sedona,Fuscia,hybrid
+390,Mercury,Topaz,Maroon,electric
+391,Ford,Transit Connect,Orange,gasoline
+392,Audi,Quattro,Purple,hybrid
+393,Subaru,Impreza WRX,Red,hybrid
+394,Toyota,Venza,Puce,hybrid
+395,Dodge,Dakota,Orange,diesel
+396,Pontiac,Fiero,Red,diesel
+397,Ford,LTD Crown Victoria,Red,hybrid
+398,Dodge,Ram Van 2500,Red,hybrid
+399,Mitsubishi,Diamante,Indigo,electric
+400,Mercedes-Benz,Sprinter 2500,Teal,hybrid
+401,Toyota,FJ Cruiser,Mauv,electric
+402,Lincoln,MKX,Purple,gasoline
+403,Saturn,S-Series,Pink,electric
+404,Mercedes-Benz,W201,Pink,hybrid
+405,Mazda,626,Mauv,gasoline
+406,Mazda,626,Purple,gasoline
+407,GMC,Sierra 2500,Yellow,gasoline
+408,Pontiac,Grand Am,Teal,hybrid
+409,Ford,Fusion,Yellow,electric
+410,Toyota,Avalon,Blue,hybrid
+411,Cadillac,DeVille,Teal,gasoline
+412,BMW,X5 M,Mauv,diesel
+413,Mitsubishi,Truck,Puce,gasoline
+414,Mazda,626,Crimson,hybrid
+415,Audi,Cabriolet,Purple,hybrid
+416,Acura,TL,Green,diesel
+417,Mercedes-Benz,E-Class,Indigo,hybrid
+418,Chrysler,LeBaron,Puce,hybrid
+419,Chevrolet,Corvette,Pink,electric
+420,Dodge,Ram 1500,Green,diesel
+421,Ford,Ranger,Khaki,hybrid
+422,Mercury,Grand Marquis,Khaki,electric
+423,Hummer,H3T,Teal,diesel
+424,Dodge,Daytona,Purple,electric
+425,GMC,Savana 1500,Maroon,diesel
+426,Dodge,Stealth,Khaki,gasoline
+427,Lincoln,Mark VIII,Puce,diesel
+428,Mazda,Miata MX-5,Crimson,diesel
+429,Chevrolet,S10 Blazer,Purple,electric
+430,Chevrolet,Cavalier,Violet,hybrid
+431,Jeep,Liberty,Purple,gasoline
+432,Mercury,Cougar,Turquoise,hybrid
+433,Hyundai,Santa Fe,Orange,hybrid
+434,GMC,3500,Teal,gasoline
+435,Dodge,Ram Van 1500,Red,diesel
+436,Volkswagen,GTI,Green,electric
+437,Lincoln,Continental,Violet,hybrid
+438,Ford,Escape,Crimson,gasoline
+439,Dodge,Omni,Green,gasoline
+440,BMW,Z4,Yellow,electric
+441,Mercedes-Benz,C-Class,Indigo,diesel
+442,Honda,CR-V,Pink,gasoline
+443,Bugatti,Veyron,Mauv,gasoline
+444,Mazda,MX-3,Purple,gasoline
+445,BMW,530,Green,hybrid
+446,Chevrolet,Camaro,Maroon,hybrid
+447,Lexus,SC,Puce,diesel
+448,Suzuki,Sidekick,Fuscia,electric
+449,Ford,Windstar,Puce,electric
+450,Audi,S8,Crimson,diesel
+451,Daewoo,Nubira,Mauv,diesel
+452,Scion,xD,Red,diesel
+453,Jeep,Grand Cherokee,Mauv,gasoline
+454,Acura,NSX,Yellow,hybrid
+455,GMC,Envoy XL,Green,hybrid
+456,Jeep,Wrangler,Purple,gasoline
+457,Volkswagen,Passat,Violet,diesel
+458,Isuzu,Impulse,Blue,diesel
+459,Dodge,Spirit,Blue,electric
+460,Jaguar,XJ,Pink,electric
+461,Toyota,MR2,Blue,electric
+462,Chevrolet,Express 1500,Violet,electric
+463,Mercury,Cougar,Khaki,gasoline
+464,Chevrolet,Camaro,Turquoise,gasoline
+465,Pontiac,Firebird,Mauv,electric
+466,Toyota,Corolla,Mauv,hybrid
+467,Mazda,MX-3,Violet,gasoline
+468,Volkswagen,Golf,Violet,gasoline
+469,GMC,Savana 3500,Yellow,electric
+470,Toyota,Xtra,Fuscia,hybrid
+471,Suzuki,XL7,Purple,diesel
+472,Pontiac,Trans Sport,Turquoise,electric
+473,BMW,5 Series,Khaki,diesel
+474,Chevrolet,S10,Green,electric
+475,Acura,TSX,Puce,hybrid
+476,Mitsubishi,Galant,Indigo,hybrid
+477,Bentley,Continental,Mauv,electric
+478,Buick,Regal,Khaki,gasoline
+479,Pontiac,Parisienne,Khaki,gasoline
+480,Ford,Taurus,Orange,gasoline
+481,Toyota,Cressida,Yellow,electric
+482,BMW,X5,Mauv,hybrid
+483,Cadillac,Eldorado,Violet,diesel
+484,Ford,Focus,Violet,hybrid
+485,Mazda,B-Series,Crimson,hybrid
+486,GMC,3500 Club Coupe,Maroon,diesel
+487,Chrysler,Sebring,Puce,diesel
+488,Ford,Ranger,Purple,electric
+489,BMW,Z3,Blue,electric
+490,Audi,A4,Mauv,diesel
+491,Nissan,Versa,Yellow,gasoline
+492,Mercedes-Benz,C-Class,Crimson,gasoline
+493,Lotus,Elise,Red,electric
+494,Volvo,240,Red,diesel
+495,Dodge,Sprinter,Aquamarine,gasoline
+496,Nissan,Xterra,Purple,hybrid
+497,Nissan,Altima,Pink,diesel
+498,Toyota,Camry,Khaki,electric
+499,BMW,M3,Turquoise,diesel
+500,Dodge,Dakota Club,Mauv,diesel
+501,Isuzu,Rodeo,Orange,diesel
+502,Lexus,SC,Orange,diesel
+503,Mazda,B-Series,Pink,gasoline
+504,BMW,330,Khaki,gasoline
+505,Audi,A6,Violet,hybrid
+506,Mitsubishi,Galant,Indigo,electric
+507,Chrysler,Town & Country,Yellow,diesel
+508,GMC,Sonoma,Blue,hybrid
+509,Ford,Mustang,Maroon,diesel
+510,Mercedes-Benz,CL-Class,Mauv,electric
+511,Maserati,430,Green,electric
+512,BMW,1 Series,Turquoise,electric
+513,Toyota,Previa,Green,diesel
+514,Jeep,Comanche,Puce,gasoline
+515,Ford,Ranger,Mauv,electric
+516,Mazda,CX-7,Maroon,hybrid
+517,Ford,Tempo,Crimson,hybrid
+518,Audi,S4,Crimson,gasoline
+519,Kia,Sportage,Aquamarine,hybrid
+520,Toyota,Sequoia,Pink,hybrid
+521,Honda,Insight,Teal,diesel
+522,Mercury,Grand Marquis,Crimson,electric
+523,Mercedes-Benz,GL-Class,Orange,gasoline
+524,Chevrolet,G-Series 3500,Puce,gasoline
+525,Mitsubishi,Mirage,Teal,gasoline
+526,Mercury,Sable,Goldenrod,hybrid
+527,Suzuki,Sidekick,Violet,gasoline
+528,Hummer,H2,Turquoise,electric
+529,Scion,FR-S,Red,gasoline
+530,Ford,Econoline E350,Goldenrod,diesel
+531,Ford,Escort,Violet,hybrid
+532,GMC,Sierra Hybrid,Orange,electric
+533,Toyota,4Runner,Blue,hybrid
+534,Mazda,MPV,Red,hybrid
+535,Audi,A5,Fuscia,hybrid
+536,Nissan,Pathfinder,Khaki,gasoline
+537,Volkswagen,Corrado,Fuscia,hybrid
+538,Volkswagen,Jetta,Green,electric
+539,Volkswagen,rio,Yellow,diesel
+540,Pontiac,Firefly,Turquoise,electric
+541,Mazda,Mazda3,Turquoise,hybrid
+542,Dodge,Dakota,Purple,electric
+543,Cadillac,CTS,Yellow,electric
+544,Dodge,Durango,Mauv,diesel
+545,BMW,7 Series,Teal,diesel
+546,Dodge,Viper,Teal,diesel
+547,Chrysler,Sebring,Yellow,gasoline
+548,Mazda,RX-8,Teal,electric
+549,Aston Martin,DBS,Crimson,electric
+550,Eagle,Summit,Pink,gasoline
+551,Maserati,Biturbo,Goldenrod,electric
+552,Chevrolet,APV,Khaki,diesel
+553,Mercedes-Benz,S-Class,Mauv,electric
+554,Chrysler,Concorde,Orange,gasoline
+555,Honda,CR-V,Turquoise,electric
+556,Honda,Accord,Puce,electric
+557,Audi,S8,Goldenrod,gasoline
+558,Land Rover,Range Rover,Goldenrod,diesel
+559,Ford,Econoline E250,Crimson,gasoline
+560,Pontiac,Grand Prix,Turquoise,diesel
+561,Audi,4000s,Mauv,hybrid
+562,Mercedes-Benz,SLS AMG,Blue,electric
+563,Volvo,V50,Fuscia,electric
+564,Acura,MDX,Purple,gasoline
+565,Mercedes-Benz,E-Class,Orange,gasoline
+566,Volkswagen,riolet,Indigo,diesel
+567,Holden,Monaro,Indigo,electric
+568,Dodge,D250,Yellow,gasoline
+569,Dodge,Neon,Maroon,electric
+570,Honda,Civic,Violet,diesel
+571,Honda,Odyssey,Goldenrod,gasoline
+572,Kia,Optima,Turquoise,hybrid
+573,Buick,LeSabre,Goldenrod,gasoline
+574,Lotus,Elan,Green,diesel
+575,Volkswagen,Type 2,Puce,gasoline
+576,Maserati,Spyder,Yellow,hybrid
+577,Dodge,Charger,Khaki,electric
+578,Buick,Skyhawk,Pink,electric
+579,Ford,Ranger,Pink,hybrid
+580,Subaru,Justy,Indigo,electric
+581,Lotus,Esprit,Crimson,gasoline
+582,Chrysler,Sebring,Mauv,diesel
+583,Mercury,Mountaineer,Purple,gasoline
+584,BMW,X5 M,Pink,hybrid
+585,Lexus,ES,Crimson,gasoline
+586,Honda,S2000,Teal,electric
+587,Pontiac,Bonneville,Maroon,diesel
+588,Pontiac,Solstice,Crimson,hybrid
+589,Cadillac,Fleetwood,Indigo,diesel
+590,Mitsubishi,GTO,Maroon,hybrid
+591,Mitsubishi,Cordia,Aquamarine,gasoline
+592,Lotus,Esprit,Pink,electric
+593,Suzuki,Grand Vitara,Violet,hybrid
+594,Infiniti,FX,Turquoise,diesel
+595,Audi,80/90,Fuscia,hybrid
+596,Ford,Econoline E350,Pink,gasoline
+597,Pontiac,Firefly,Goldenrod,hybrid
+598,Nissan,Versa,Green,gasoline
+599,Mitsubishi,Galant,Orange,diesel
+600,Plymouth,Voyager,Orange,electric
+601,BMW,Z4 M,Blue,gasoline
+602,BMW,Z4,Violet,gasoline
+603,Suzuki,X-90,Green,electric
+604,Pontiac,Grand Prix,Fuscia,hybrid
+605,Cadillac,XLR,Goldenrod,diesel
+606,Mercedes-Benz,R-Class,Purple,electric
+607,Audi,TT,Yellow,hybrid
+608,Chrysler,Cirrus,Teal,electric
+609,Pontiac,Torrent,Goldenrod,diesel
+610,Chevrolet,Corvette,Puce,diesel
+611,Pontiac,G6,Goldenrod,gasoline
+612,Mercedes-Benz,SL-Class,Green,diesel
+613,Maybach,57,Violet,gasoline
+614,Volkswagen,Jetta,Maroon,electric
+615,Mazda,RX-7,Indigo,electric
+616,Jeep,Wrangler,Purple,hybrid
+617,Mercedes-Benz,C-Class,Puce,diesel
+618,Pontiac,Grand Am,Violet,hybrid
+619,Nissan,Murano,Pink,gasoline
+620,Subaru,Legacy,Fuscia,gasoline
+621,Ford,Escort,Puce,electric
+622,Chrysler,Voyager,Fuscia,diesel
+623,Nissan,370Z,Khaki,diesel
+624,Mitsubishi,Mirage,Mauv,diesel
+625,Dodge,Ram Van 2500,Green,electric
+626,Buick,LaCrosse,Teal,hybrid
+627,Kia,Sedona,Blue,gasoline
+628,Buick,Regal,Purple,electric
+629,Mercury,Villager,Blue,gasoline
+630,Audi,A3,Purple,electric
+631,Infiniti,G25,Puce,hybrid
+632,Audi,A4,Fuscia,hybrid
+633,Lamborghini,Murciélago,Puce,diesel
+634,Dodge,Ram Van B150,Green,gasoline
+635,Mitsubishi,Mirage,Puce,gasoline
+636,Lotus,Esprit,Green,hybrid
+637,Audi,S5,Red,electric
+638,Ford,E350,Teal,gasoline
+639,Infiniti,QX,Teal,diesel
+640,Dodge,Grand Caravan,Orange,gasoline
+641,Ford,Ranger,Puce,diesel
+642,Buick,Century,Indigo,hybrid
+643,Nissan,Pathfinder Armada,Teal,gasoline
+644,Nissan,Titan,Mauv,gasoline
+645,Suzuki,XL-7,Pink,gasoline
+646,Saturn,VUE,Mauv,electric
+647,Mercury,Milan,Fuscia,electric
+648,Subaru,Brat,Fuscia,electric
+649,Mercedes-Benz,300SE,Orange,gasoline
+650,Mitsubishi,Excel,Fuscia,gasoline
+651,Oldsmobile,88,Fuscia,gasoline
+652,Tesla,Roadster,Maroon,diesel
+653,Lexus,SC,Blue,diesel
+654,Nissan,Quest,Red,diesel
+655,GMC,3500 Club Coupe,Green,hybrid
+656,Ford,Econoline E150,Orange,electric
+657,BMW,1 Series,Orange,gasoline
+658,Lexus,GX,Purple,hybrid
+659,Ford,Fairlane,Khaki,gasoline
+660,Lincoln,Blackwood,Fuscia,electric
+661,BMW,X5,Fuscia,gasoline
+662,Mercedes-Benz,CLS-Class,Pink,hybrid
+663,Ford,EXP,Khaki,gasoline
+664,Toyota,Yaris,Violet,electric
+665,Buick,Electra,Mauv,gasoline
+666,Chevrolet,Impala,Teal,electric
+667,Suzuki,Cultus,Pink,diesel
+668,Chevrolet,Monte Carlo,Aquamarine,hybrid
+669,Citroën,SM,Red,hybrid
+670,Subaru,Legacy,Puce,gasoline
+671,Porsche,911,Khaki,diesel
+672,Chrysler,Concorde,Orange,diesel
+673,Audi,A5,Aquamarine,diesel
+674,Nissan,Maxima,Red,diesel
+675,Mazda,MPV,Green,hybrid
+676,Dodge,Ram 2500 Club,Red,electric
+677,Ford,Escape,Fuscia,diesel
+678,Nissan,Frontier,Fuscia,gasoline
+679,Ford,Econoline E150,Orange,hybrid
+680,Mercury,Tracer,Red,electric
+681,Toyota,Sequoia,Blue,gasoline
+682,Eagle,Talon,Blue,diesel
+683,Lotus,Elan,Aquamarine,gasoline
+684,GMC,Suburban 2500,Fuscia,gasoline
+685,Oldsmobile,Aurora,Maroon,electric
+686,Rolls-Royce,Phantom,Fuscia,hybrid
+687,Chevrolet,Silverado 3500,Mauv,hybrid
+688,Jeep,Wrangler,Teal,hybrid
+689,Ford,Taurus,Violet,electric
+690,Mercury,Monterey,Aquamarine,hybrid
+691,Lotus,Exige,Turquoise,diesel
+692,Volvo,V50,Crimson,hybrid
+693,Dodge,Grand Caravan,Pink,electric
+694,Chevrolet,Avalanche 2500,Green,diesel
+695,Jaguar,XJ Series,Purple,hybrid
+696,Ford,Laser,Maroon,hybrid
+697,Mitsubishi,Endeavor,Purple,gasoline
+698,Plymouth,Voyager,Teal,electric
+699,Porsche,928,Fuscia,gasoline
+700,Dodge,Ram 2500,Mauv,diesel
+701,Chevrolet,Impala,Teal,diesel
+702,Aston Martin,DB9,Purple,gasoline
+703,Geo,Tracker,Maroon,electric
+704,Chevrolet,Cobalt SS,Orange,hybrid
+705,Lexus,RX,Maroon,electric
+706,Pontiac,Grand Am,Indigo,gasoline
+707,BMW,X5,Violet,electric
+708,Plymouth,Voyager,Blue,hybrid
+709,Pontiac,GTO,Blue,hybrid
+710,Dodge,Caravan,Teal,diesel
+711,Buick,Terraza,Fuscia,diesel
+712,Jeep,Patriot,Pink,gasoline
+713,Ford,F350,Blue,electric
+714,Toyota,Truck Xtracab SR5,Turquoise,electric
+715,Lexus,GS,Orange,diesel
+716,GMC,1500,Red,gasoline
+717,Porsche,911,Orange,electric
+718,Chevrolet,Impala,Crimson,hybrid
+719,Mazda,Mazda2,Orange,electric
+720,GMC,Yukon XL 1500,Yellow,hybrid
+721,Volkswagen,CC,Teal,electric
+722,Isuzu,Rodeo,Yellow,gasoline
+723,Cadillac,DeVille,Purple,electric
+724,Daihatsu,Charade,Green,gasoline
+725,Chevrolet,Silverado 1500,Green,electric
+726,Geo,Metro,Violet,gasoline
+727,Dodge,Grand Caravan,Green,diesel
+728,Jeep,Grand Cherokee,Goldenrod,gasoline
+729,Porsche,911,Aquamarine,gasoline
+730,Saturn,S-Series,Turquoise,diesel
+731,Mazda,MX-5,Green,diesel
+732,Mitsubishi,Pajero,Pink,gasoline
+733,Mercury,Capri,Khaki,diesel
+734,Nissan,Frontier,Pink,gasoline
+735,GMC,Sierra 2500,Green,electric
+736,Isuzu,Trooper,Green,hybrid
+737,Jeep,Liberty,Indigo,hybrid
+738,Chevrolet,Colorado,Puce,gasoline
+739,Jeep,Liberty,Purple,electric
+740,Chrysler,LHS,Khaki,diesel
+741,Mazda,MPV,Mauv,gasoline
+742,Mitsubishi,Chariot,Teal,gasoline
+743,Jeep,Wrangler,Turquoise,electric
+744,Mercury,Tracer,Teal,electric
+745,Buick,Riviera,Turquoise,electric
+746,Mercedes-Benz,S-Class,Khaki,hybrid
+747,Pontiac,Bonneville,Turquoise,electric
+748,Isuzu,Hombre,Crimson,diesel
+749,Mazda,B-Series,Maroon,electric
+750,Chevrolet,Impala,Aquamarine,gasoline
+751,Kia,Sedona,Khaki,gasoline
+752,Chevrolet,Cobalt SS,Pink,electric
+753,Honda,CR-X,Green,diesel
+754,Acura,NSX,Khaki,gasoline
+755,Volkswagen,Fox,Red,hybrid
+756,Volkswagen,Passat,Teal,electric
+757,Hyundai,Azera,Teal,gasoline
+758,Mercury,Grand Marquis,Khaki,electric
+759,BMW,Z4,Violet,gasoline
+760,Jeep,Grand Cherokee,Crimson,gasoline
+761,Hyundai,Sonata,Crimson,diesel
+762,Jaguar,XK Series,Green,hybrid
+763,Chevrolet,Lumina,Turquoise,hybrid
+764,GMC,Acadia,Orange,gasoline
+765,Ford,F250,Goldenrod,hybrid
+766,Mercedes-Benz,W201,Khaki,diesel
+767,Buick,Century,Mauv,gasoline
+768,Lexus,ES,Fuscia,hybrid
+769,Dodge,Ram,Green,hybrid
+770,Toyota,Tundra,Purple,electric
+771,Cadillac,Escalade EXT,Goldenrod,electric
+772,Ford,Explorer Sport Trac,Purple,diesel
+773,Plymouth,Breeze,Violet,electric
+774,Mercury,Cougar,Crimson,electric
+775,Suzuki,Grand Vitara,Pink,electric
+776,Nissan,Pathfinder Armada,Green,hybrid
+777,Oldsmobile,Cutlass Supreme,Teal,electric
+778,Geo,Metro,Pink,hybrid
+779,Kia,Amanti,Orange,hybrid
+780,Chevrolet,Cavalier,Violet,hybrid
+781,Cadillac,DTS,Blue,diesel
+782,Volvo,S40,Maroon,diesel
+783,Dodge,Ram 3500,Yellow,hybrid
+784,Mazda,Protege,Red,electric
+785,Toyota,Tundra,Orange,hybrid
+786,Land Rover,Range Rover,Indigo,hybrid
+787,Suzuki,Daewoo Lacetti,Puce,hybrid
+788,Isuzu,VehiCROSS,Goldenrod,hybrid
+789,Cadillac,DeVille,Turquoise,diesel
+790,Mitsubishi,3000GT,Turquoise,diesel
+791,Cadillac,STS,Maroon,hybrid
+792,Mitsubishi,Galant,Yellow,diesel
+793,Ford,E150,Purple,hybrid
+794,Chevrolet,Silverado 1500,Yellow,electric
+795,Mercedes-Benz,SL-Class,Puce,electric
+796,Mitsubishi,RVR,Yellow,electric
+797,Chrysler,Sebring,Puce,gasoline
+798,Jeep,Grand Cherokee,Pink,diesel
+799,Hyundai,Veracruz,Purple,hybrid
+800,Mercedes-Benz,G-Class,Khaki,gasoline
+801,Ford,Transit Connect,Yellow,gasoline
+802,Lexus,GS,Violet,diesel
+803,Land Rover,Discovery,Green,diesel
+804,Saab,5-Sep,Fuscia,electric
+805,Ford,Tempo,Mauv,electric
+806,Honda,Passport,Puce,gasoline
+807,Subaru,Impreza,Green,gasoline
+808,Mitsubishi,Mirage,Green,gasoline
+809,Saab,3-Sep,Puce,hybrid
+810,Mercedes-Benz,R-Class,Turquoise,electric
+811,Lexus,IS,Khaki,electric
+812,Volvo,850,Indigo,diesel
+813,BMW,M3,Khaki,hybrid
+814,Chrysler,Concorde,Teal,gasoline
+815,Chevrolet,Express 3500,Green,gasoline
+816,Chevrolet,Uplander,Orange,electric
+817,Chevrolet,Suburban 2500,Purple,gasoline
+818,Mercedes-Benz,SL-Class,Yellow,diesel
+819,Dodge,D350 Club,Violet,hybrid
+820,Dodge,Dakota,Pink,diesel
+821,Cadillac,Fleetwood,Crimson,hybrid
+822,Saturn,Ion,Purple,hybrid
+823,Mazda,MPV,Khaki,hybrid
+824,Pontiac,Firebird Formula,Blue,diesel
+825,Ford,Taurus,Violet,electric
+826,Ford,Explorer,Maroon,gasoline
+827,Mercury,Sable,Red,gasoline
+828,Audi,Q7,Crimson,electric
+829,Chevrolet,Silverado 2500,Purple,hybrid
+830,Subaru,Tribeca,Red,diesel
+831,Mercury,Marauder,Crimson,diesel
+832,Audi,A5,Goldenrod,gasoline
+833,Dodge,Intrepid,Fuscia,diesel
+834,Honda,Pilot,Aquamarine,electric
+835,Buick,LeSabre,Violet,electric
+836,Bentley,Continental GTC,Indigo,hybrid
+837,Toyota,Yaris,Aquamarine,hybrid
+838,Chevrolet,Suburban 1500,Orange,gasoline
+839,GMC,3500 Club Coupe,Goldenrod,electric
+840,Mercury,Tracer,Khaki,gasoline
+841,Chevrolet,Express 1500,Indigo,hybrid
+842,Dodge,Ram 50,Goldenrod,hybrid
+843,Nissan,Pathfinder,Indigo,gasoline
+844,Chevrolet,G-Series 3500,Maroon,hybrid
+845,Suzuki,XL7,Khaki,electric
+846,Infiniti,JX,Green,hybrid
+847,Ford,Explorer Sport,Puce,electric
+848,Plymouth,Colt,Red,electric
+849,GMC,Sierra 1500,Green,hybrid
+850,Plymouth,Colt Vista,Fuscia,hybrid
+851,Buick,Century,Goldenrod,electric
+852,Volvo,V90,Crimson,hybrid
+853,Saab,5-Sep,Indigo,diesel
+854,GMC,1500,Turquoise,diesel
+855,Ford,E350,Pink,diesel
+856,Ford,Econoline E250,Maroon,hybrid
+857,BMW,Z4 M,Yellow,hybrid
+858,Dodge,Ram 50,Red,gasoline
+859,Ford,Windstar,Maroon,gasoline
+860,Lamborghini,Murciélago,Puce,electric
+861,Mercedes-Benz,SL-Class,Crimson,electric
+862,Chrysler,300M,Pink,hybrid
+863,Ford,Ranger,Blue,hybrid
+864,Volkswagen,Golf,Maroon,diesel
+865,Jaguar,X-Type,Blue,hybrid
+866,Porsche,Cayman,Mauv,diesel
+867,Chevrolet,Lumina,Purple,diesel
+868,Mazda,B-Series Plus,Red,electric
+869,Mitsubishi,Montero,Teal,gasoline
+870,Mercedes-Benz,SL-Class,Violet,gasoline
+871,Suzuki,Esteem,Teal,gasoline
+872,Ford,Five Hundred,Blue,gasoline
+873,Mercedes-Benz,S-Class,Green,electric
+874,Chevrolet,Express 1500,Crimson,electric
+875,Kia,Spectra,Goldenrod,gasoline
+876,Volkswagen,Golf,Khaki,gasoline
+877,Cadillac,Escalade ESV,Crimson,hybrid
+878,Aston Martin,Vantage,Mauv,diesel
+879,Ford,Freestar,Puce,diesel
+880,Mitsubishi,Endeavor,Green,diesel
+881,GMC,Suburban 2500,Aquamarine,electric
+882,Smart,Fortwo,Indigo,gasoline
+883,Land Rover,Range Rover Classic,Yellow,gasoline
+884,Toyota,T100,Green,gasoline
+885,Dodge,Charger,Orange,gasoline
+886,Nissan,Quest,Khaki,gasoline
+887,Nissan,Rogue,Aquamarine,hybrid
+888,Lincoln,Continental Mark VII,Mauv,gasoline
+889,Saab,900,Red,diesel
+890,Ford,Aspire,Crimson,diesel
+891,Mitsubishi,Galant,Turquoise,electric
+892,Nissan,Quest,Indigo,gasoline
+893,Mercedes-Benz,CLS-Class,Indigo,electric
+894,Ford,Galaxie,Indigo,electric
+895,Toyota,Tacoma,Goldenrod,electric
+896,Mitsubishi,Montero,Yellow,gasoline
+897,Ford,Thunderbird,Khaki,hybrid
+898,Audi,S4,Turquoise,gasoline
+899,Subaru,Forester,Crimson,gasoline
+900,Aston Martin,V8 Vantage S,Violet,hybrid
+901,Pontiac,Grand Am,Pink,gasoline
+902,Mitsubishi,3000GT,Violet,gasoline
+903,Ford,Expedition,Aquamarine,electric
+904,Kia,Amanti,Yellow,hybrid
+905,Audi,A6,Teal,gasoline
+906,Kia,Sportage,Fuscia,gasoline
+907,Suzuki,SJ,Turquoise,hybrid
+908,Dodge,Sprinter,Blue,diesel
+909,Chevrolet,Avalanche 1500,Mauv,hybrid
+910,Mazda,Miata MX-5,Aquamarine,diesel
+911,Chrysler,LeBaron,Purple,gasoline
+912,Honda,Pilot,Maroon,hybrid
+913,Toyota,RAV4,Purple,diesel
+914,Chevrolet,Silverado 1500,Turquoise,hybrid
+915,Ford,Mustang,Blue,gasoline
+916,Ford,Laser,Red,electric
+917,Subaru,Justy,Fuscia,electric
+918,Maserati,Coupe,Yellow,diesel
+919,Cadillac,DeVille,Red,diesel
+920,Pontiac,Chevette,Puce,electric
+921,Maybach,57,Khaki,diesel
+922,Land Rover,Discovery,Mauv,diesel
+923,Chrysler,Cirrus,Maroon,gasoline
+924,Oldsmobile,88,Yellow,gasoline
+925,Suzuki,Grand Vitara,Crimson,diesel
+926,Volkswagen,GTI,Maroon,diesel
+927,Hummer,H3T,Green,gasoline
+928,Cadillac,Escalade EXT,Mauv,electric
+929,Dodge,Ram 2500 Club,Purple,diesel
+930,Hyundai,XG350,Teal,gasoline
+931,Mazda,B-Series Plus,Yellow,electric
+932,Chevrolet,Camaro,Red,electric
+933,Dodge,Ram,Maroon,diesel
+934,Mazda,Navajo,Crimson,electric
+935,Suzuki,Swift,Green,electric
+936,Oldsmobile,Intrigue,Maroon,hybrid
+937,Buick,Regal,Crimson,electric
+938,Mercury,Mystique,Crimson,electric
+939,Porsche,928,Pink,hybrid
+940,Chevrolet,Corvette,Teal,diesel
+941,Buick,LaCrosse,Red,diesel
+942,Chrysler,Fifth Ave,Khaki,diesel
+943,Suzuki,Grand Vitara,Aquamarine,hybrid
+944,Lexus,LX,Yellow,gasoline
+945,Toyota,RAV4,Orange,electric
+946,Toyota,Camry Solara,Fuscia,hybrid
+947,MINI,Cooper Countryman,Puce,electric
+948,Audi,riolet,Yellow,hybrid
+949,Porsche,Carrera GT,Pink,hybrid
+950,Mercedes-Benz,SLK-Class,Green,electric
+951,Chevrolet,Sportvan G30,Orange,electric
+952,Kia,Spectra,Violet,gasoline
+953,Volkswagen,Passat,Puce,diesel
+954,Mazda,Tribute,Turquoise,electric
+955,Mercedes-Benz,SLK-Class,Maroon,hybrid
+956,Mitsubishi,Truck,Blue,electric
+957,Cadillac,Escalade EXT,Indigo,electric
+958,Volvo,XC70,Green,electric
+959,Mitsubishi,Truck,Goldenrod,electric
+960,Dodge,Dakota Club,Pink,hybrid
+961,Dodge,Ram 50,Purple,gasoline
+962,Buick,Park Avenue,Green,gasoline
+963,Jeep,Wrangler,Crimson,gasoline
+964,Chevrolet,Suburban 2500,Purple,electric
+965,Saab,9000,Puce,hybrid
+966,BMW,M3,Yellow,diesel
+967,Chevrolet,Corvette,Mauv,electric
+968,Dodge,Ram 1500 Club,Blue,electric
+969,Dodge,Grand Caravan,Turquoise,hybrid
+970,Chevrolet,Blazer,Blue,gasoline
+971,Chevrolet,Tahoe,Purple,electric
+972,Dodge,D250 Club,Purple,gasoline
+973,Volkswagen,CC,Maroon,diesel
+974,Ford,Econoline E250,Fuscia,gasoline
+975,Pontiac,G6,Orange,hybrid
+976,BMW,M6,Goldenrod,gasoline
+977,Volkswagen,rio,Pink,gasoline
+978,Pontiac,LeMans,Violet,electric
+979,Isuzu,Rodeo,Green,diesel
+980,Ford,E350,Yellow,electric
+981,GMC,Sonoma,Crimson,gasoline
+982,Ford,F250,Indigo,hybrid
+983,Lexus,SC,Purple,electric
+984,Mitsubishi,Mirage,Yellow,gasoline
+985,Subaru,Outback,Red,gasoline
+986,Chrysler,Town & Country,Crimson,gasoline
+987,Mercury,Grand Marquis,Blue,electric
+988,Plymouth,Voyager,Mauv,diesel
+989,Chevrolet,Silverado 3500,Green,hybrid
+990,Buick,Riviera,Blue,electric
+991,Volkswagen,GTI,Purple,gasoline
+992,Ford,E350,Turquoise,gasoline
+993,Kia,Optima,Red,electric
+994,Mazda,MX-5,Yellow,hybrid
+995,Mitsubishi,Mighty Max,Violet,gasoline
+996,Dodge,Spirit,Indigo,gasoline
+997,Audi,S6,Fuscia,electric
+998,Mazda,B-Series,Turquoise,hybrid
+999,Acura,Integra,Purple,electric
+1000,Honda,Accord,Orange,gasoline
