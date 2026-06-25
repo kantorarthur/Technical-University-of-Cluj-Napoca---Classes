@@ -1,0 +1,5 @@
+-o expresie lambda poate fi atribuita la o variabila de tip interfata functionala
+
+-tipurile perametrilor expresiilor lambda implicite sunt determinate la compilare
+
+-sunt compilate cu metode abstracte

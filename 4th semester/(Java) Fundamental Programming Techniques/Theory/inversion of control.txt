@@ -1,0 +1,22 @@
+-cuplare slaba
+
+-testare usoara
+
+-flexibilitate ridicata
+
+-callback-urile reprezinta una dintre formele fundamentale inversion of control
+
+-callback este o functie care se apeleaza ulterior ca raspuns la un eveniment sau finalizarea
+ unei operatiuni
+
+-injectarea se face prin constructori sau prin setter, nu prin get. get este pentru extragerea
+ datelor
+
+-injectarea se face din exterior
+
+-nu programatorul controleaza fluxul, ci framework-ul. programatorul cedeaza controlul asupra 
+fluxului catre un container/framework
+
+-in paternul service locator clientii apeleaza un obiect central locator care le ofera depedenta
+
+-service locator nu injecteaza depedenta

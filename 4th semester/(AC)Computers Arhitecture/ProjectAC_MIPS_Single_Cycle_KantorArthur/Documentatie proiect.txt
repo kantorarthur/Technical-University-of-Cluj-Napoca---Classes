@@ -1,0 +1,19 @@
+Proiect MIPS32 - Kantor Arthur
+
+	Proiectul meu de MIPS32 determina suma elementelor impare si mai mari decat 2 la o putere dintr o memorie dintr-un sir de N numere stocate in memorie incepand cu adresa A (A >=12).
+
+Nu am putut sa testez pe placuta la laborator deoarece mai aveam niste probleme de compilare cat timp am fost la laborator, dar probleme de compilare le-am rezolvat, proiectul compiland cu succes.
+
+O problema pe care am avut o era ca iFetch-ul facea adunare continua pe placuta, asta deoarece intr-un loc in cod am pus enable-ul pe '1' in loc sa il controlez din buton.
+
+O alta problema am avut-o cu UC-ul pana am inteles cum trebuie trasate si gandite operatiile, dar am rezolvat si aceasta problema.
+
+
+Suma finala al programului meu se stocheaza in registrul "$s2" sau "$18".
+
+Componenta "UC" cu rolul de a codifica instructiunile este functionala.
+Componenta "iFetch" cu rolul de a aduce instructiunea urmatoare din memoria ROM pentru a fi executata este functionala.
+Componenta "EX" cu rolul de a efectua calcule aritmetice si logice pentru executia instructiunilor cu ajutorul altor componente este functionala.
+Componenta "MEM" care gestioneaza memoria "RAM", oferindu-ti posibilitatea de a citi si salva date, este functionala.
+
+(Descrierea celor 4 instructiuni se afla in documentul proiect deoarece au fost scris pe caiet, fiind tema pentru laboratul 4).

@@ -1,0 +1,40 @@
+deadlock, starvation, zombie, robin rr, arhitectura monolitica, mnu, tlb, copy-on-write, swapping
+
+
+deadlock - o stare in care un set de procese sunt blocate permanent fiindca asteapta dupa o resursa sa fie eliberata 
+
+starvation - cand de exemplu scriitorul nu poate sa scrie fiindca cititorii niciodata nu elibereaza resursa (asteapta ceva dar nu primeste nimic)
+
+proces zombie - parintele nu apeleaza wait(), copilul a murit dar parintele este inca in viata
+
+proces orfan - parintele a murit primul dar copilul e inca in viata
+
+arhitectura monolitica - intregul sistem de operare ruleaza ca un singur program in kernel, spatiu unic, protectie scazuta
+
+arhitectura microkernel - sistemul opereaza pe mai multe programe si cu mai multi lucratori, protectie mai mare
+
+fragmentare interna - memoria alocata el8ste mai mare decat spatial necesar.
+		    - partionare fixa si paginare
+
+fragmentare externa - spatiu disponibil nu e contiguu
+		     -rezolva compactarea si are trb cu segmentarea
+
+segmentare - memoria virtuala este divizata in unitate de dimensiuni variabile 
+
+locatie spatiala - acceseaza memorii din vecinate
+
+locatie fragmentala - acceseaza acceasi locatie de memorie, caching
+
+locatie temporara - reutilizarea frecventa a unor date
+
+copy on write - amanarea copierii resurselor pana cand este absolut necesar(atunci cand se incearca modificarea lor)
+
+mmu - unitate de gestionare a memoriei
+    -traducere a adreselor
+    -protectie memorie
+    -paginare
+
+disc magnetic(hdd) -
+
+
+daca un proces fiu apeleaza exec atunci continutul de adrese e complet inlocuit

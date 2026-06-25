@@ -1,0 +1,11 @@
+-wait apartine clasei object si suspenda executia threadului curent si ELIBEREAZA LOCK-UL
+
+-wait trebuie apelata mereu sincronized
+
+-sleep apartine clasei thread si nu elibereaza lock-ul(tine resursa blocata)
+
+-un thread poate fi trezit prin notify, notifyAll sau cand ii expira timpu sau random sau interrupt
+
+-lock-ul se obtine prin synchronized
+
+-cuplare slaba, coeziune mare vrem sa avem in clase

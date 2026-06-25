@@ -1,0 +1,16 @@
+-clone implicit face shallow copy
+
+-trebuie suprascriere pentru deep copy
+
+-clone copiaza referintele
+
+-daca x.clone() != x atunci se poate modifica originalul
+
+-clone nu creeaza copie independenta
+
+-nu trebuie suprascriere equals()
+
+-trebuie implementat Clonable, dar Clonable nu e interfata functionala
+
+-shallow copy este copierea atribuit cu atribut
+

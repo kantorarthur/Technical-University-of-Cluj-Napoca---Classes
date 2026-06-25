@@ -1,0 +1,17 @@
+-serializable si cloneable si remote sunt interfete marker
+
+-runnable si comparator si Consumer sunt interfete functionale
+
+-daca o interfata are o singura metoda abstracta, inseamna ca e functionala
+
+-daca o interfata nu are nicio metoda inseamna ca e marker
+
+-interfata Info e interfata de adnotare
+
+-o metoda pura depinde doar de parametrii de intrare
+
+-U extends T:  inseamna orice tip U care este acelasi cu T sau subtip T
+
+-U super T: nu se poate
+
+-? super T: inseamna orice tip  ? care este acelasi tip cu ? sau supertip

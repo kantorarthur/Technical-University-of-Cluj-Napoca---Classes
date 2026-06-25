@@ -1,0 +1,9 @@
+-java permite si polimorfism dinamic si static
+
+-poliformismul permite ca o metoda sa execute functionalitati diferite in functie de obiectul asupra careia este apelata
+
+-la poliformism dinamic decizia se ia la execute, la static la compile
+
+-poliformismul static: supraincarcarea metodelor, decizia la compile
+
+-poliformsimul dinamic: suprascrierea metodelor, decizia se ia la execute

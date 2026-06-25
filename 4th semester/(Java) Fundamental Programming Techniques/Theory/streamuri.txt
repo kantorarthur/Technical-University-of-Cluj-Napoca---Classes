@@ -1,0 +1,28 @@
+-se bazeaza pe iterare interna
+
+-nu pot fi reutilizate
+
+-suporta operatii secventiale si paralele
+
+-streamurile nu sunt colectii
+
+-nu stocheaza elemente
+
+-suporta programarea functionala
+
+-operatii intermediare(lazy) - transforma elementele
+
+-operatii terminale(eager) - produc un reuzltat
+
+-streamurile paralele proceseaza pe fire diferite, deci se pot printra elementele intr-o ordine aleatoare
+
+-o operatie stateful este problematica
+
+-nu putem sa modificam sursa in timpul executiei unui stream
+
+-forEachOrdered rezolva asta de mai sus
+
+-filter: lazy(intermediara) 
+-forEach: eager(terminala)
+-reduce: eager(terminala)
+

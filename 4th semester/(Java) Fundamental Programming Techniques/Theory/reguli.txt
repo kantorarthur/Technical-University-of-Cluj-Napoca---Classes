@@ -1,0 +1,19 @@
+regula lui Coad: 
+-cuplare redusa intre clase
+-incapsulare mai buna
+-cod mai usor de intretinut si testat
+-liskov
+
+regula lui Demeter: 
+-o metoda ar trebui sa utilezeze doar variabilele instanta ale clasei sale, parametrii transmisi ca argument etc...
+-o metoda nu ar trebui sa efectueze operatii pe obiectele care sunt parte ale altor obiecte
+-nu este recomandat get
+
+
+SOLID:
+-Modulele de nivel inalt nu ar trebui sa depinda de modulele de nivel jos, ar trebui sa depinda de abstractii
+-un modul ar trebui sa fie deschis pentru extindere si inchis pentru modificare
+-dependentele trebuie sa fie fata de abstractii, nu fata de clase
+-o subclasa nu poate restrange comportamentul clasei de baza
+-o suclcasa trebuie sa poata inlocui superclasa
+-trebuie sa aiba doar o responsabilitate

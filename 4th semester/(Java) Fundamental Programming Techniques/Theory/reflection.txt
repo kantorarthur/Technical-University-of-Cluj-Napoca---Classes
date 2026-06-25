@@ -1,0 +1,15 @@
+-reflection permite creearea la executie a unei noi instante a unei clase
+
+-un obiect <?> reprezinta metadatele unei clase incarcate in jvm si poate fi obtinut prin .class
+
+-permite accesarea informatiilor despre structura unei clase in timpul executiei
+
+-NU permite identificarea completa la runtime a tipurilor generice
+
+-pot incarca si inspecta clase in mod dinamic la rulare
+
+-metoda getClass nu e statica
+
+-se repreiznta ca obiect de tip Class sau Class<T>, nu Object
+
+-exista un singur obiect Class

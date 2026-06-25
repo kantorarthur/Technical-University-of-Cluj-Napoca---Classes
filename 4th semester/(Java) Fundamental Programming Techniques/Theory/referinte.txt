@@ -1,0 +1,6 @@
+referinte
+-pot sa fie folosite doar unde se poate folosi o expresie lambda
+
+-sunt interschimbabile(implementarea unei interfete functionale)
+
+-person::getName este echivalent cu person->person.getName() si e referinca la instanta

@@ -1,0 +1,21 @@
+-daca folosesti <?> poti sa atribui lista de orice tip
+
+-wildcard-ul <?> poate fi folosit pentru a reprezinta orice tip referitna necunoscut
+
+-parametrii de tip generic nu pot sa fie tipuri primitive(int, double, boolean,etc...)
+
+-tipurile generice permit scrierea de cod polimorfic
+
+-nu ai voie sa creezi new T()
+
+-informatiile despre parametrii generici sunt eliminate la compilare
+
+-pot fi folosite pentru a defini clase si interfete
+
+-nu este U super T, doar ? super T
+
+-U extends T inseamna : U e T sau subtip T
+
+-daca C2 extinde C1 si C1 extinde C, atunci C2 e subtip al lui C
+
+-daca C implementeaza interfata I si C1 extinde C, atunci C1 e subtip al lui I

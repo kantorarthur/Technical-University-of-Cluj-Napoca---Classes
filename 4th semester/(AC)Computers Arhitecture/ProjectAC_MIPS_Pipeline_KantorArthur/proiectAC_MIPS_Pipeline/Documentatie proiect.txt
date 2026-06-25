@@ -1,0 +1,19 @@
+Proiect MIPS32 Pipeline - Kantor Arthur
+
+	Proiectul meu de MIPS32 determina suma elementelor impare si mai mari decat 2 la o putere dintr o memorie dintr-un sir de N numere stocate in memorie incepand cu adresa A (A >=12).
+
+Am putut sa testez la laborator componentele pe placuta. Componentele cu siguranta merg, doar programul cu valorile de final nu am apucat sa il testez pe placuta deoarece nu aveam varianta cu NoOp-uri implementata cand am facut laboratorul respectiv, fiind prima data cand am vorbit despre hazarduri.
+
+O modificare pe care a trebuit sa o fac este sa adaug logica pentru BNE, trebuind sa schimb si UC.
+
+Inca o modificare pe care am facut-o este schimband iFetch in 34 de biti dupa rezolvarea hazardurilor.
+
+A trebuit sa schimb si logica din PC datorita schimbarii din iFetch.
+
+
+Suma finala al programului meu se stocheaza in registrul "$s2" sau "$18".
+
+Componenta "UC" cu rolul de a codifica instructiunile este functionala.
+Componenta "iFetch" cu rolul de a aduce instructiunea urmatoare din memoria ROM pentru a fi executata este functionala.
+Componenta "EX" cu rolul de a efectua calcule aritmetice si logice pentru executia instructiunilor cu ajutorul altor componente este functionala.
+Componenta "MEM" care gestioneaza memoria "RAM", oferindu-ti posibilitatea de a citi si salva date, este functionala.

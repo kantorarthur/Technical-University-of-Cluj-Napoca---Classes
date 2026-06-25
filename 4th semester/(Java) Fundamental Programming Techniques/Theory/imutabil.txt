@@ -1,0 +1,9 @@
+-campurile clasei trebuie declarate ca private si finale
+
+-get trebuie sa returneze copie
+
+-clasa NU trebuie sa modifice campurile
+
+-toate variabilele trebuie initializate in constructorul clasei
+
+-o clasa imutabila este thread-safe

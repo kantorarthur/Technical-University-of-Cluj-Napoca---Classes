@@ -1,0 +1,7 @@
+-are nevoie de cast(conversii) explicite
+
+-widening(upcasting) inseamna convertirea unui subtip catre un supertip
+
+-downcasting reprezinta conversia unui supertip la un subtip
+
+-downcasting este acceptat la compile fara cast explicit dar genereaza erori
