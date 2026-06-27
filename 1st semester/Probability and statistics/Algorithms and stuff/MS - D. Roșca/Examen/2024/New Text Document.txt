@@ -1,0 +1,18 @@
+25 students (diff balls)
+desks (diff boxes)
+a) place 25 students in 6 unordered groups
+b) place 25 students in 15 desks
+c) place 25 students in 30 desks such that there is max one student in a desk (injective)
+d) choose a team of 4 students from 25 students
+e) split 24 students in teams a,b,c,d such that they have the same number of students
+f) place 25 students in 24 desks such that there are no desks empty
+
+3.a) the target isnt hit by 2 bullets
+
+4. +law large
+
+using boolean -> weak connectivity
+
+dijkstra
+max flow min cut
+matching cu alg de augmenting si maximum matching

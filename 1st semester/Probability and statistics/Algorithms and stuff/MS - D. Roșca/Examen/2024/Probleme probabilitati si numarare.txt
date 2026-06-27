@@ -1,0 +1,137 @@
+Probleme probabilități
+
+1. O urnă conține jetoane numerotate de la 1 la 8. Se extrag la întîmplare 3 jetoane. Care este probabilitatea ca suma numerelor extrase să fie superioară sau egală cu suma numerelor rămase?
+
+2. O persoană scrie n scrisori către n persoane distincte, le pune în n plicuri si apoi scrie adresele la întîmplare. Care este probabilitatea ca cel puţin o scrisoare să ajungă la destinatarul potrivit? (problema concordanţelor)
+
+3. Un magazin se aprovizionează de la trei fabrici A,B,C, cu un anumit produs, în proporţie de 30%,60%, 10%. Proporția de articole defecte dintre cele achiziționate este de 2%,1%,5%, pentru A, respectiv B¸si C. Dacă un cumpărător găseşte că produsul achiziționat la magazin este cu defecțiuni, care este probabilitatea ca el să fi provenit de la fabrica B?
+
+4. Trei țintaşi nimeresc o țintă cu probabilitățile 0,7;0,8;0,9. Fiecare trage câte o lovitură. Care este probabilitatea ca:
+a) Toți trei să nimerească ținta?
+b) Cel puţin unul să nimerească ținta?
+c) Unul singur să nimerească ținta?
+
+5. O urnă conține 5 bile albe, 3 bile negre, si 2 bile roşii iar altă urnă conține 3 bile negre, 2 bile albe si 5 bile roşii. Se extrage câte o bilă din fiecare urnă. Care este probabilitatea ca să se extragă bile de aceeași culoare?
+
+6. O intreprindere recruteaza un nou angajat. Se prezintă n candidați într-o ordine aleatoare și primul candidat care trece testul propus de comisie este angajat. Probabilitatea de a trece testul este p=0,6 pentru fiecare candidat. Fie variabila aleatoare X ce ia valoarea j dacă al j-ulea candidat este admis, şi valoarea 0 daca nu este nimeni admis. Sa se determine p(X=j), valoarea medie E(f).
+
+7. Probabilitatea ca un bec sa reziste la suprasarcina este p=0,90. Se fac 5 incercari de becuri. Fie X variabila aleatoare care reprezinta numarul de becuri care au rezistat. Se cere media lui X.
+
+8. Trei secţii ale unei întreprinderi S1, S2, S3, depăşesc planul zilnic de producţie cu probabilităţile de respectiv 0,7, 0,8 şi 0,6. Să se calculeze probabilităţile evenimentelor:
+A - cel puţin o secţie să depăşească planul de producţie
+B - toate secţiile să depăşească planul de producţie.
+
+9. Un sortiment de marfă dintr-o unitate comercială provine de la trei fabrici diferite în proporţii, respectiv 3 1 de la prima fabrică, 6 1 de la a doua fabrică şi restul de la fabrica a treia. Produsele de la cele trei fabrici satisfac standardele de fabricaţie în proporţie de 90%, 95% şi respectiv 92%. Un client ia la întâmplare o bucată din sortimentul de marfă respectiv
+a) Care este probabilitatea ca produsul să satisfacă standardele de fabricaţie?
+b) Care este probabilitatea ca produsul să fie defect şi să provină de la prima fabrică?
+
+10. Într-un grup de studenţi aflaţi în excursie se găsesc 6 fete şi 9 băieţi. Se aleg la întâmplare doi studenţi pentru a cerceta traseul. Care este probabilitatea ca cei doi să fie:
+a) băieţi 
+b) fete
+c) un băiat şi o fată
+d) cel puţin un băiat
+e) primul băiat şi a doua fată
+f) de acelaşi sex.
+
+11. Din mai multe controale asupra activităţilor a trei magazine se apreciază că în proporţie de 90%, 80%, 70%, cele trei magazine au declarat marfa vândută. La un nou control, comisia de control solicită 50 de documente privind activitatea comercială: 20 de la primul magazin, 15
+de la al doilea, 15 de la al treilea. Dintre acestea se alege unul la întâmplare pentru a fi verificat: a) Cu ce probabilitate documentul ales este corect (înregistrat)?
+b) Constatând că este corect, cu ce probabilitate el aparţine primului magazin?
+
+12. La patru unităţi alimentare din oraş se poate găsi zilnic pâine proaspătă cu probabilităţile p1=0.8, p2=0.9, p3=0.95 şi respectiv p4=0.85. Fie X numărul unităţilor alimentare din cele patru la care se găseşte pâine proaspătă într-o zi fixată. Să se determine:
+a) distribuţia variabilei aleatoare X;
+b) valoarea medie
+
+13. O urnă conține 50 bile dintre care 10 sunt negre, iar restul albe. Se scot la întâmplare 5 bile. Care e probabilitatea ca între cele 5 bile să fie bile negre?
+
+14. Intr-un tramvai cu trei vagoane se urcă 7 persoane. Care este probabilitatea ca in primul vagon să se urce exact 4 persoane?
+
+15. Un aparat se compune din 3 elemente a căror fiabilitate ( durata de funcționare fără defecțiune tot timpul intr-un interval de timp dat) este egală cu 0,9; 0,85; 0,75. Primul element este indispensabil pentru funcționarea aparatului, defectarea unuia din celelalte două elemente face ca aparatul să funcționeze cu un randament inferior, iar defectarea simultană a elementelor doi si trei face imposibilă funcționarea aparatului. Elementele se defectează independent unul de altul. Se cere probabilitatea ca aparatul să funcționeze tot timpul intr-un interval e timp dat. 
+
+16. La un colegiu, 260 de studenți pasionați de matematică participă la 3 cursuri opţionale: geometrie (G), analiză (An) si algebră (Al). Se stie că 52 de studenți participă la toate cele 3 cursuri si că 100 participă la Al, 200 la An, 165 la G, 57 la Al ¸si An, 125 la An ¸si G, 82 la Al¸si G. Un student este ales la intâmplare si este intrebat dacă participă la cursul de geometrie
+a) Care este probabilitatea ca răspunsul să fie "da"?
+b) Care este probabilitatea ca studentul intrebat să participe la cursul de geometrie, dar nu si la cel de analiză?
+c) Studentul intrebat susține că participă la cursul de analiză. Care este probabilitatea ca el să nu participe nici la cursul de geometrie, nici la cel de algebră?
+
+17. Intr-un lot de 200 de piese 10 sunt defecte, iar in alt lot de 150 de piese 7 sunt defecte. Se iau la intâmplare 20 de piese din unul din aceste loturi. Care este probabilitatea ca intre piesele alese să fie 18 bune si 2 defecte?
+
+18. De pe un submarin se lansează asupra unui distrugător 4 torpile. Probabilitatea ca o torpilǎ să lovească distrugătorul este 0,3. Pentru scufundarea distrugătorului sunt suficiente 2 torpile, iar dacă o singură torpilǎ loveşte distrugătorul el se scufundă cu probabilitatea 0,6. Care este probabilitatea ca distrugătorul să se scufunde.
+
+19. Se dau 6 urne: (S1) : 2 urne conţin câte 2 bile albe,si 4 negre; (S2) : 3 urne conţin câte 2 bile albe si 8 negre; (S3): o urnă conține 6 bile albe si 2 negre. Se extrage la intâmplare o bilǎ dintr-una din urne si se cere să se calculeze probabilitatea ca bila extrasă să fie albă. Să se determine probabilitatea ca bila albă să provină din urna ce conține 6 bile albe si 2 negre.
+
+20. Un student merge la facultate folosind unul din traseele A, B, C. Alegerea traseului este independentă de vreme. Dacă plouă, probabilitățile ca el să intârzie, urmând traseele A, B, C, sunt 0,06; 0,15; 0,12. Pentru o zi fără ploaie probabilitățile respective sunt 0,05; 0,1; 0,15. Se presupune că, in medie, intr-o zi din patru plouă. Să se determine:
+a) probabilitatea ca el să fi ales traseul C, stiind că a intârziat si ziua este fără ploaie;
+b) probabilitatea ca ziua să fie ploioasă, stiind că a intârziat.
+
+21. Doi arcași trag asupra unei ținte câte o săgeatǎ. Probabilitatea ca primul arcaş să lovească ținta este 0,8, iar pentru al doilea este 0,4. După tragere, in țintă se găsește o singură săgeatǎ. Să se găsească probabilitatea ca săgeata din țintă să aparțină primului arcas.
+
+22. Intr-o urnă sunt 7 bile albe si 5 negre, iar in alta 6 albe si 8 negre. Se extrage din fiecare câte o bilă. Care e probabilitatea ca ambele bile să fie albe?
+
+23. Aruncând 4 zaruri, să se determine probabilitatea de a obține fața 1 cel puţin o dată. Să se determine probabilitatea de a obține fața 1 o singură dată.
+
+24. Intr-o uzină se fabrică lămpi cu incandescență. La aceste lămpi intâlnim 20/100 defecte de fabricație si 50/100 defecte de montaj. Să se calculeze probabilitatea ca o lampă să fie defectă. (Reuniune)
+
+25. Dintr-o urnă cu 9 bile albe si 10 bile negre se extrag (succesiv, fără inlocuire) 4 bile. Să se determine probabilitatea ca cel puțin una să fie albă
+
+26. Se dau sase urne cu următoarele structuri:
+(S1) 2 urne ce conţin câte 2 bile albe si 6 negre;
+(S2) 3 urne ce conțiin câte 3 bile albe si 5 negre;
+(S3) o urnă ce conține 6 bile albe si 2 negre.
+Se extrage la intâmplare o bilă dintr-o urnă. Se cer:
+a) Care e probabilitatea de a extrage o bilă neagră?
+b) Presupunem că dintr-o urnǎă oarecare s-a extras o bilă neagră. Care e probabilitatea ca ea să aparțină unei urne din (S2)?
+
+27. Din 100 de piese lucrate la un strung, 5 sunt defecte. Se iau la intâmplare 45 de piese.
+a) Care e probabilitatea ca să existe intre cele 45 de piese o singură piesă defectă?
+b) Care e probabilitatea ca să existe cel puţin o piesă defectǎ ?
+
+28. La examenul de matematică, probabilitatea ca o lucrare să aibă notă de trecere este 0,75. Se aleg la intâmplare 10 lucrări si fie X v.a. (variabila aleatorie) ce reprezintă numărul lucrărilor ce vor fi notate cu notă de trecere. Se cer:
+a) repartiția lui X;
+b) E(X), D2(X)
+c) P(X ≥ 5), P(7 ≤ X ≤ 10/X ≥ 8), P(X = 10)
+
+29. Intr-o mină au loc in medie 2 accidente pe săptămânâ (legea Poisson). Să se calculeze probabilitatea de a exista cel mult 2 accidente:
+a) intr-o săptămână; b) in 2 săptămâni.
+(Soluție: 
+a) Fie X v. a. ce desemnează numărul de accidente dintr-o săptămână este poissoniană cu λ = 2, deci P(X ≤ 2) = = e-2 i 1+2 1! +4 2!¢ = 5e-2.
+b) Fie Y v. a. ce desemnează numărul de accidente in 2 săptămâni este poissoniana cu λ = 4, deci P(Y ≤ 2) = e-41+4 1! + 16 2! ¢ = 13e-4.)
+
+30. 6 urne conțin respectiv bile numerotate {1,2,3}, {2,4}, {3,4,5,6}, {2,4,6}, {1,3,5}, {6}. Se aruncă un zar şi din urna cu acel număr se extrage o bilă. Care este probabilitatea ca bila extrasă să fie 3? Dacă bila extrasă este 3 care este probabilitatea ca ea fie din urna 5?
+
+31. 10 persoane urcă arbitrar într-un tramvai cu 3 vagoane. Care este probabilitatea
+a) în primul vagon să fie 3 persoane
+b) în cel puțin un vagon să fie 3
+c) Dacă vagoanele sunt identice care este probabilitatea să fie situația 2,5,3?
+
+Probleme de numărare
+
+1. În câte moduri distincte se pot forma grupe câte 3 studenți din 9 studenți.
+
+2. În câte moduri pot fi împărțite 18 persoane în grupe de studiu de 5,6 și 7 persoane?
+
+3. În câte moduri pot fi mâncate 22 înghețate de 6 copii știind că fiecare a mâncat cel puțin una? Dar dacă ştim că un copil a mâncat 3? 
+
+4. În câte moduri pot fi repartizați 50 de copii în 5 clase identice astfel ca în fiecare clasă să fie 10 copii? Dar dacă sunt repartizați arbitrar?
+
+5. În câte moduri pot fi așezați într-un rând 5 americani, 3 englezi şi 3 francezi astfel ca cei de aceeaşi naţionalitate să fie împreună?
+
+6. Câte soluții în numere naturale are ecuația x1+x2+...+X10=24 știind că orice soluție are trei termeni egali cu zero?
+
+7. Un grup de 12 muncitori sunt repartizați în 4 puncte de lucru care au nevoie respectiv de 3,5,2,2 persoane. Câte moduri distincte de repartizare sunt posibile?
+
+8. În câte moduri pot fi repartizați 50 de agenți în 5 țări diferite astfel ca în fiecare țară să fie 10 agenți?
+
+9. În câte moduri distincte se pot distribui 6 mere și 8 pere la 6 copii?
+
+10. Se consideră cifrele 1,2,3,4,5. Câte numere de 4 cifre pot fi formate în cazurile
+1) prima cifră e 1 şi nu se repetă
+2)prima cifră e 1 și se pot repeta
+3) se divide cu 2 și se pot repeta
+4) se divide cu și nu se repetă
+
+11. Câte șiruri de biți de lungime 9 se pot forma care au cifra a doua 1 sau primele două cifre sunt 00 sau suma cifrelor 4.
+
+12. 14 profesori noi se repartizează la 4 școli. În câte moduri distincte se poate face repartizarea dacă se pune condiția ca fiecare şcoală să primească cel puțin 2?
+
+13. în câte moduri distincte se pot urca 8 copii în 4 bărci identice?
+
+14. În câte moduri distincte se pot urca 8 copii în 4 bărci distincte? 
