@@ -1,0 +1,52 @@
+laborator 9 so
+
+un lacat functioneaza similar cu un semafor
+
+mutex(mutual exclusive) - permite doar un thread sa intre in regiunea critica 
+
+
+pthread_mutex_t mutex - declarearea, initializare, inchidere etc se fac in main
+
+cand transmit la functie fac cu *mutex
+
+pthread_mutex_initializer - 
+
+la init avem referinta la mutexul declarant si attribute cum avem la threaduri
+
+
+
+-- in functie ne folosim asa de lacat
+
+ptherad_mutex_lock
+si _unlock
+
+inainte de a intra in regiunea critica facem _lock
+cand iesim facem _unlock
+
+e ca si cand stai la coada la baie, intra primul om(a intrat in regiunea critica), inchuie usa si alti oameni asteapta si apoi omul iese(din regiunea critica) si da unlock
+
+
+
+--varabila cond
+
+pthread_cond la toate e fix la fel ca la mutex la apelare de functii etc dar schimbi cond cu mutex
+
+
+avem timedwait si asteapta un anumit timp
+la cond_wait primeste variabila cond si un mutex
+
+signal incearca sa trezeasca primu thread care asteapta la coada, broadcast toate threadurile care asteapta
+
+
+ex de folosit variabile conditionale: cand avem mai multe functii de atribuit tbhreadurilor
+
+avem un mutex care se blocheaza in f1 si deblocheaza pe o anumita conditie care se intampla in functia 2, noi avem posibilitatea de a bloca si debloca lacate chiar daca ele nu sunt in aceeasi functie
+
+
+trylock e similar cu trywait
+
+
+phtread_cond practic deblocheaza un lacat cu o conditie 
+
+
+

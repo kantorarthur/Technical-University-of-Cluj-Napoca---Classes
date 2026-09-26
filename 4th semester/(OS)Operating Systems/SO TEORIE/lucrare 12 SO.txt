@@ -1,0 +1,49 @@
+lucrare 12 SO
+
+maparea de fisiere
+
+in general procesele nu cunosc una despre altele resursa(chiar daca au acelasi file descriptor) 
+si daca e process copil-parinte tot nu se sincronizeaza foarte correct
+
+ce inseamna mapare de fisiere:
+ii trimit o copie de bucata de memorie cu care vreau sa lucrez catre procesu meu dar daca vreau sa scriu de exemplu in memorie nu pot in copie
+
+
+pentru a ne mapa un fisier in memorie:
+void *mmap(void *adresa - incerc sa aloc un fisier la o anumita adresa de memorie, dar ca sa lasam sistemul de operare sa gaseasca o adresa transmitem NULL. daca nu gaseste nicio adresa de memorie disponibila o sa returneze -1.
+	   size_t dimensiune - cat vreau sa mapez(cati octeti)
+	   int prot - (de la protected) ca si semafoarele care pot fi partajate si zic cum protejez memoria de inconsistente
+           int flags - putem da doi parametri(MAP_PRIVATE sau MAP_SHARED)
+	   int fd -
+	   off_t offset - de unde din fisierul meu vreau sa fac maparea)
+
+int munmap(adresa, dimensiune)
+
+
+cand noi stergem un fisier: este alocat pe disk, este ocupat cu diverse valori. ce se intampla?
+pierd referinta si ii zic sistemului de operare ca poate sa aloce memorie in spatiu de memorie eliberata si se suprascrie memoria
+
+
+cand lucram cu shm open sa inceapa fisierele cu root(numele lor)	
+
+shm_open reeturneaza un fd si il folosim sa mapam
+
+shm_unlink returneaza fd in caz de success sau -1 in caz de esec
+
+
+ftruncate - redimensioneaza un fisier deja deschis/creat un fel de realloc
+
+
+intrebari:
+1)-1 daca nu s a putut aloca sau adresa unde s-a gasit loc pt mapare
+2)fiindca este mai putin costisitor
+3)shm_open
+4)cand mapam memoria si adresa la care vrem sa salvam memoria este mai mica decat memoria pe care vrem s o salvam
+5)
+
+6) la pipeuri un process pune altu ia si tot asa. la memorie partajata toate procesele pot sa scrie/citeasca
+7) putem sa avem un mutex pus intr o memorie partajata si mai multe procese il vad
+
+avem 2 procese si trebuie sa lucreze printr-un pipe sau sa sincronizam procesele(semafoare/mutex)
+
+probleme la test sunt facute pt pipeuri nu memorie partajata

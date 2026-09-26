@@ -1,0 +1,11 @@
+threaduri lab 7 SO
+
+pentru a crea thread:
+
+pthread_create(&thread_id, atributele Threadului(de obicei NULL), functia pe care o executa, argumentul transmis functiei de thread)
+daca s-a executat cu success se returneaza 0
+
+pthread_join() ne permite sa asteptam terminarea executiei unui thread. 
+primul argument va if id-ul threadului (fara &) iar al 2-lea un pointer in care salvam ce returneaza functia in threadul main		
+
+o functie de thread va avea mereu prototipu void* threadFn*(void *)

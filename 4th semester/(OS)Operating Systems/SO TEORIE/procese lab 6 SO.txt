@@ -1,0 +1,30 @@
+procese lab 6 SO
+
+-un proces este o entitate ce reprezinta un program care ruleaza
+
+cu fork() creem un nou proces, procesul creat va fi identic cu parintele, mai putin cu id-ul
+daca nu se poate creea fiul cu fork(), comanda va returna -1. 
+cand creem cu fork, daca ceea ce returneaza fork == 0, atunci inseamna ca suntem in copil, daca e diferit atunci inseamna ca suntem in parinte si ceea ce a returnat fork e id-ul cu care a fost creat copilul
+
+getpid() returneaza id-ul propriu, getppid() returneaza id-ul parintelui.
+
+
+prin exit(ceva) returnam ceva din procesul copil catre procesul parinte. ca sa luam acel ceva din proces folosim ori
+waitpid(pid_copil, &variabila in care vrem sa salvam, 0) sau
+wait(&variabila in care vrem sa salvam)
+
+cu WEXITSTATUS(variabila in care am salvat si vrem sa folosim) afisam
+
+daca vrem sa se termine toti copiii dam for(int i=0;i<nrCopii;i++) wait()
+
+trebuie sa facem usleep daca lucreaza mai multe threaduri pe aceleasi/aceeasi variabila
+
+execl - functie care primeste oricate argumente, primul argument trebuie sa fie calea absoluta catre fisier, iar ultimul argument trebuie sa fie NULL
+execlp - functie care primeste oricate argumente, fix ca execl dar nu trebuie cale absoluta, poti sa dai doar numele executabilului
+
+fork dubleaza nr de procese existente(se ia si primul proces adica daca faci doar o data fork, sunt 2 procese, fork() fork() sunt 4)
+
+
+daca primim fisier de la tastatura: int fd1 = -1; fd1 = open(argv[1], O_RDWR | O_CREAT); 
+
+argv[0] o sa fie numele executabilului cand executa utilizatoru

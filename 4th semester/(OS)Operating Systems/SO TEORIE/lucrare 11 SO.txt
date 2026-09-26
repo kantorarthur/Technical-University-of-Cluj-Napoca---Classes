@@ -1,0 +1,46 @@
+lucrare 11 SO
+
+pipe-uri - functioneaza ca o coada de mesaje (FIFO)
+
+daca fac citire cu un octet mi se muta cursoru o pozitie in dreapta de la read
+am facut o scriere cu un octet mi se muta cursoru o pozitie in dreapta de la write
+
+si nu mai am acces la ce aveam inainte
+
+- o situatie: pipe-ul este gol si capatul A(read) vrea sa citeasca dar nu e nimic conectat la write, atunci se returneaza 0. dar daca B este conectat la write, A asteapta pana se face write
+
+-daca bufferul din pipe e plin si incercam sa scriem o sa asteptam dupa cineva sa se conecteze si sa citeasca
+-in situatia asta putem sa si receptionam semnalul SIGPIPE si daca il receptionam se inchide procesu(adica nu se mai asteapta)
+
+
+-pipeuri cu nume si anonime
+
+-pipeuri cu nume pot fi folosite intre oricare 2 procese
+-pipeurile anonime pot fi folosite doar in acelasi process si in procesele tip parinte-copil
+
+
+pipe cu nume-
+int mkfifo(nume, mod_deschidere);
+int returneaza mesaj de success sau eroare
+
+pipeuri anonime-
+int pipe(int pipefd[2]);
+fd[0] este capatul de citire
+fd[1] este capatul de scriere
+
+
+
+comunicare bidirectionala-
+
+A are acces la un file descriptor si B la altul, atunci folosim doua pipeuri
+
+
+intrebare 1: secvential, octet cu octet
+
+intrebare 2. daca un scriitor e conectat, se asteapta, daca nu se returneaza 0
+
+intrebare 3: preferam sa folosim pipe cu nume daca folosim pipe-ul in procese diferite. daca lucram cu aceelasi process, inclusiv cu fii lui, atunci folosim pipe anonim
+
+intrebare 4: pipeul primeste un vector de 2 elemente si un capat va fi initalizat cu capat de citire, celalalt cu capat de scriere
+
+intrebare 5: bidirectional 

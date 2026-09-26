@@ -1,0 +1,60 @@
+lab8 so
+
+int count =0; (declarat global)
+si fiecare thread vrea sa schimbe valoarea countului cu propriul id
+
+avem void*f(void*){
+
+int cnt = param->id;
+}
+
+noi avem 5 threaduri si fiecare executa portiunea de cod si exista posibilitatea ca doua sau mai multe threaduri sa lucreze pe aceeasi variabila
+
+
+
+si vrem sa prelucram o valoare comuna tuturor threadurilor
+
+
+
+sem_t *sem = sem_open("nume semafor", flags, mode(permisiuni), value - cate threaduri au voie sa treaca de semafor la un moment dat)
+
+regiune critica - noi vrem sa avem un anumit nr de threaduri care intra odata
+
+
+sem_unlink - dezaloca resursele cu totu pentru semaforu deschis(la unlink dai numele)
+sem_close - imi elibereaza referinta ( ii da lui sem_t *sem = NULL intr-un fel, se pierde referinta)(la close dai referinta)
+
+- prima data trebuie sa dam unlink
+
+-sem open daca esueaza transmite null
+
+
+
+-sem_wait(sem_t*) -  cand vine un thread in functie, vede semwait, daca semaforul nu a ajuns cu value la 0 decrementeaza valoarea si trece mai departe. Daca s-a ajuns value la 0 si threadul apleaza sem_wait atunci threadul asteapta pana value e diferit de 0 fiindca un alt thread a trecut de zona critica
+
+trywait - in cazul in care threadul nu poate sa treaca de el trywait arunca o eroare
+
+sem_post - facem cand un thread a iesit din regiunea critica(a terminat lucrul pe valoarea aia) si incrementam value ca sa poate sa intre urmatorul thread
+
+
+
+-semafoare anonime:
+	se initlizeaza cu sem_init in main - ca sa spunem ca sa fie vizibil si in alte procese
+		sem_init(sem_t *sem, int pshared, unsigned int value);
+	sem_destroy(sem_t *sem) - e similar cu sem unlink si destroy
+
+
+
+
+partea de wait si post le facem in functie  , restu le facem in main
+
+
+nu e bine sa dai f()
+wait()
+cod...
+post()
+
+trebuie sa identificam care sunt resursele commune din cod si doar pe partea unde vrei sa pastrezi consistenta dai wait si post
+ex: o citire o poate face toata lumea, dar o scrie trebuie sa o faca doar un utilizator(thread) o data
+
+o parcare cu 10 locuri si avem 20 de threaduri: vin 10 threaduri, isi ocupa locul si vine 11 si trebuie sa astepte pana se elibereaza un loc

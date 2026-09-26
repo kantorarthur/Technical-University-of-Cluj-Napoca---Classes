@@ -1,0 +1,47 @@
+intrebari test:
+
+-daca pipe() da fail returneaza diferit de 0, daca success returneaza 0.
+
+-pipe e FIFO
+
+-la pipe f(0) citeste, f(1) scrie
+
+-la pipe cursoru se muta in dreapta si la citire si la scriere cand se proceseaza octet
+
+-in pipe-uri daca am mutat cursoru nu mai am acces la ce aveam inainte
+
+-daca un capat vrea sa citeasca dar nu e nimic conectat la write se returneaza 0. daca e ceva conectat la write se asteapta pana se scrie
+
+-daca bufferul e plin si incercam sa scriem o sa asteptam dupa cineva sa se conecteze si sa citeasca, in situatia asta putem si sa receptionam semnalul SIGPIPE si se inchide procesu(nu se mai asteapta)
+
+-pipeuri cu nume pot fi folosite intre oricare 2 procese
+
+-pipueri anonime pot fi folosite doar in acelasi process si in procesele tip parinte-copil
+
+-comunicare bidirectionala: asta inseamna ca un process poate sa si citeasca sa si scrie, de obicei se face 2 pipeuri diferite
+
+-octetii sunt cititi secvential, octet cu octet
+
+-regiune critica: zona din cod in care resursa comuna este utilizata, unde sa poata intra doar un anumit nr de threaduri cu o conditie
+
+-sem_unlink(dezaloca resursele)
+
+-sem_close(distruge referinta)
+
+-sem_open daca esueaza transmite null
+
+-sem_wait - daca semaforul nu a ajuns la value 0 se decrementeaza si trece mai departe. daca semaforul are value 0 atunci asteapta pana se incrementeaza
+
+-trywait - daca nu se poate trece de wait se arunca o eroare
+
+-daca doua threaduri modifica aceeasi variabila fara sincronizare se numeste conditie de cursa
+
+-daca un thread uita sa elibereze un lacat se ajunge la interblocare
+
+-un mutex anonim poate folosit doar intre threaduri din acelasi process
+
+-un mutex cu nume poate fi folosit si intre alte threaduri
+
+-un semafor anonim poate fi folosit doar intre threaduri din acelasi process
+
+-un semafor cu nume poate fi folost si intre alte threaduri
