@@ -1,0 +1,9 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="63" xOffset="0" scrollWidth="740" startPos="1258" endPos="1258" selMode="0" lang="Assembly" encoding="-1" filename="C:\Users\Kanto\Desktop\assembly\tema4_ex1.asm" backupFilePath="" originalFileLastModifTimestamp="1747501696" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="6422583" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="3" xOffset="0" scrollWidth="740" startPos="834" endPos="834" selMode="0" lang="Assembly" encoding="-1" filename="C:\Users\Kanto\Desktop\assembly\tema3_ex2.asm" backupFilePath="" originalFileLastModifTimestamp="1746484338" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3801202" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
