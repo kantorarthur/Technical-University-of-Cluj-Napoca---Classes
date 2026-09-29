@@ -1,0 +1,3 @@
+-O sa avem de facut un proiect, trebuie sa fie gata pana la finalul saptamanii 12
+-Putem sa folosim ce tech-stack dorim
+-Putem sa folosim microservicii pt proiect

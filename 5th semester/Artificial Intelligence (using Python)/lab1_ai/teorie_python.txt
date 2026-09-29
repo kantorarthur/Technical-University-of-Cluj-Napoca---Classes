@@ -1,0 +1,23 @@
+-Ca sa rulezi(nu compilezi fiindca e limbaj interpretat) un fisier .py trebuie sa:
+!python calea_fisierului
+
+-Indentatia e foarte importanta in python
+Ex
+if ....:
+    ceva 1
+    ceva 2
+    ceva 3
+Toate liniile de cod care sunt la indentarea relativa cu "ceva 1" vor fi considerate in scope-ul if-ului
+
+-Nu trebuie sa declari tipurile variabilelor
+-Nu trebuie sa folosesti semicoloane la sf sintaxa
+-curly braces nu se folosesc la fel ca in c
+-Python e case sensitive
+
+Pracitici bune de scris cod:
+    -Variabile, functii, metode, pachete, module: lower_case_cu_underscore
+    -Clase, exceptii: CapitalWords
+    -Protected methods si functii membre: _single_leading_underscore
+    -Constante: FULL_CAPS_CU_UNDERSCORE
+
+-Impartirile (/) sunt evaluate cu virgula

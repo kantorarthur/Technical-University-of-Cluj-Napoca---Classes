@@ -1,0 +1,52 @@
+1. List
+-poate sa contina diferita tipuri de date(poate sa aiba in acelasi timp si stringuri, si intregi)
+-poate sa fie duplicati in liste
+-elementele unei liste pot sa fie schimbate
+
+a = [1, 22.3, 4, 0.1]
+
+concatenare liste:
+a + [1, 2]
+noua lista: a == [1, 22.3, 4, 0.1, 1, 2]
+
+accesare elemente:
+
+a[0] iti da a[0] normal
+a[-1] iti da ultimul element
+a[-2] iti da penultimmu element si tot asa
+
+a[0:2] == [1, 22.3] - iti da toate elementele de la indexii [0, 2)
+
+a[:2] == [1, 22.3] - iti da toate elementele de la [0, 2) (adica mereu incepe de la 0)
+
+a[2:-1] == [4] - iti da elementu din stanga
+
+a[2:] == [4, 0.1, 1, 2] - iti da toate elementele de la index pana la ultimul element, inclusiv
+
+schimbare elemente:
+
+a[0] = 3
+printf(a[0]) - o sa fie 3
+
+
+metode lista:
+
+--inserare:
+
+.insert(index, element) - insereaza elementul la indexul dat si shifteaza toata elementele din dreapta indexului cu o pozitie  
+.append(element) - adauga un element la sfarsitul listei
+.extend(lista) - adauga elementele listei date ca argument la sfarsitul listei apelante
+
+--stergere:
+
+.pop(index) - elimina elementul de la index
+.clear() - sterge toate elementele din lista
+.remove(valoare) - sterge un element indetic cu valoarea data
+
+--altele:
+.copy() - returneaza o copie a listei
+.count(valoare) - returneaza nr de elemente care sunt egale cu valoarea (fix egale)
+.reverse() - face reverse la lista
+.sort() - sorteaza lista crescator (functioneaza doar pe lista care tin doar acelasi tip)
+.sort(reverse = True) - sorteaza lista descrescator
+.sorted() - returneaza lista apelanta sortata, dar nu o schimba in place pe aceasta, ci returneaza o copie

@@ -1,0 +1,21 @@
+-poti sa concatenezi doua stringuri  prin "+"
+
+-poti sa verifici daca un substring exista intr-un string prin
+"world" in a - returneaza true daca substringu world exista in a
+
+
+
+functii pe stringuri:
+len(a) - returneaza cate caractere sunt in a
+
+metode pe stringuri:
+
+.replace(substring_replaceuit, substring_ia_locul) - daca exista substringulcare se vrea replaceuit, o sa fie replaceuit cu substring 2
+ex:
+a = "hello world"
+a.replace("hello", "see you")
+a == "see you world"
+
+a.upper() - returneaza tot stringul cu caractere upper, dar nu il schimba si intern, adica daca apelezi dupa a este normal, nu cu stringuri upper neaparat.
+
+
