@@ -1,0 +1,56 @@
+#successor
+SUCC = \p. \q. \r. q (p q r)
+
+#addition
+PLUS = \m. \n. m SUCC n
+
+#######################################################
+#boolean values true and false
+T = \x. \y. x
+F = \x. \y. y
+
+#conditional
+COND = \x. \y. \z. x y z
+
+#logical and
+land = \x. \y. x y F
+
+#logical or
+lor = \x. \y. x T y
+
+#logical not
+lnot = \x. x F T
+
+
+#######################################################
+#build pairs: cons
+PAIR = \x. \y. \f. f x y
+
+#extract the first element of a pair: head
+FIRST = \p. p T
+
+#extract the second element of a pair: tail
+SECOND = \p. p F
+
+
+#######################################################
+#mapping (m,n) to (n,n+1)
+PHI = \x. PAIR (SECOND x) (SUCC (SECOND x))
+
+#predecessor
+PRED = \n. FIRST (n PHI (PAIR 0 0))
+
+#test if argument is zero
+isZ = \x. x F lnot F
+
+
+############################################################
+#fixed point Y combinator, with evaluation inhibited
+Y != \f. (\x. f (x x)) (\x. f (x x))
+
+############################################################
+#multiplication
+MULT = \m. \n. m (PLUS n) 0
+
+#factorial of n. To call: Y FACTO n
+FACTO = \r. \n. isZ n 1 (MULT n (r (PRED n)))

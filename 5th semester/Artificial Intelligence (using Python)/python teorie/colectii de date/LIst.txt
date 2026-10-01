@@ -1,4 +1,6 @@
-1. List
+List
+
+
 -poate sa contina diferita tipuri de date(poate sa aiba in acelasi timp si stringuri, si intregi)
 -poate sa fie duplicati in liste
 -elementele unei liste pot sa fie schimbate
