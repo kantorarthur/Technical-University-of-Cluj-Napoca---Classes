@@ -1,0 +1,38 @@
+1. Downloadezi "AMD Unified Installer for FPGAs & Adaptive SoCs 2026.1: Linux Self Extracting Web Installer" de aici: https://www.amd.com/en/support/downloads/adaptive-socs-and-fpgas/development-tools/2026-1.html
+        **APESI PE LINKUL ALBASTRUL DIN STANGA, NU PE "VERIFY DOWNLOAD" **
+2. Intri unde s-a descarcat binul (probabil in ./Downloads) si faci "chmod +x nume_bin" ca sa il faci executabil
+3. Executi binul "./nume_bin". O sa se deschida un setup si downloadezi Vivado si optional Seria 7 fiindca include FPGA Artix 7
+4. Dupa ce s-a instalat Vivado, la finalul setup-ului o sa-ti apara ceva cu "Vivado License"
+
+**Ca sa intri iar in Vivado License intri in: "./director_unde_ai_instalat_vivado/2026.1/Vivado/bin" si fisierul "vlm" este Vivado License Manager**
+
+5. Trebuie sa-ti creezi o licenta pt Vivado. Ca sa faci asta:
+    5.1. Cauti "Buy Vivado Licence", intri pe site-ul AMD "Buy AMD Vivado Design Suite", apesi pe "Buy Licence" si selectezi "Basic Node-Locked" (e gratis)
+    (https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado/vivado-buy.html#buy-license)
+    5.2. O sa te bage pe o pagina unde trb sa te loghezi pe site-ul AMD.
+    5.3. Te loghezi pe site, iar la "Create Licenses" selectezi "Vivado Basic Tier License, Node Locked License"
+    5.4. Iti cere host id si host name. Astea le gasesti in "Vivado License Manager" la sectiunea din stanga: "View Host Information".
+    5.5. Dupa ce ai completat formularu pt licenta, o sa o primesti pe mail licenta
+    5.6. Descarci licenta de pe mail, intri in Vivado License Manager; in Vivado License Manager intri la "Load License" si selectezi licenta descarcata de pe mail
+
+
+6. Rulezi astea in terminal ca sa descarci libtinfo5 si libncurses5
+
+cd /tmp
+wget -4 https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.3_amd64.deb
+wget -4 https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.3-2ubuntu0.3_amd64.deb
+sudo apt install \
+  ./libtinfo5_6.3-2ubuntu0.3_amd64.deb \
+  ./libncurses5_6.3-2ubuntu0.3_amd64.deb
+
+6.1. ldconfig -p | grep -E 'libncurses.so.5|libtinfo.so.5' - Cu asta in terminal verifici daca ti s-au instalat. Daca s-au instalat ar trebui sa apara 2 linii relative contextului
+
+7. Rulezi 
+
+cd ~/director_instalare_vivado/2026.1/Vivado/bin
+XILINXD_LICENSE_FILE="$HOME/.Xilinx/Xilinx.lic" ./vivado
+
+Ca sa ii setezi intr-un fel "Path-ul" de licente vivado-ului, sa stie unde sa se uite pentru licenta.
+
+Acum poti sa rulezi vivado in mod normal(cu shortcut de pe desktop sau din terminal) si o sa mearga.
+
