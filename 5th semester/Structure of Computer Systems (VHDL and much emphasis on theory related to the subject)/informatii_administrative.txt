@@ -1,0 +1,11 @@
+-Trebuie sa citim lucrarile de lab inainte
+
+-2 quiz-uri moodle: Primul in jur de 2 noiembrie, al 2-lea in jur de 7 decembrie
+
+Colocviu la final: Intrebari si ceva de implementat
+
+Nota_Lab = q1 * 0.3 + q2 * 0.3 + 0.4 * colocviu
+
+Nota_Lab >= 5
+
+Putem face 2 absente (Care trebuie neaparat recuperate in sapt curenta sau cel tarziu sapt viitoare)

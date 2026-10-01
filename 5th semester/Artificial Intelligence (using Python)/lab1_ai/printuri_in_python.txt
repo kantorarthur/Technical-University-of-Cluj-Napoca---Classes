@@ -1,10 +1,13 @@
-format stil printf:
+Format stil printf:
 
 c = 3, d = 4
 print("a = {}, b = {}" .format(c, d))
 afiseaza: a = 3, b = 4
 
-alt stil:
+
+
+Alt stil:
+
 a = 3
 print('a este', a)
 afiseaza: a este 3

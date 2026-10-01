@@ -1,10 +1,14 @@
 Sapt 12 Proiect de prezentat
-
 Sapt 14 Colocviu
 
 Colocviu 30%, Proiect 70%
 
-Proiectu trebuie sa fie >= 5, Colocviu nu
+Proiectu trebuie sa fie >= 5, colocviu nu
 
-Media dintre colocviu si proiect trb sa fie >= 5
+TLDR:
+Nota_Lab = colocviu * 0.3 + proiect * 0.7
+
+Nota_Lab >= 5
+Proiect >= 5
+Colocviu - Nu conteaza pt promovare daca se indeplinesc cele 2 cerinte de mai sus
 

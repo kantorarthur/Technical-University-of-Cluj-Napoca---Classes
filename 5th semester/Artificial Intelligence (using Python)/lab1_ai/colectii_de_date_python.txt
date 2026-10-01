@@ -19,17 +19,29 @@ a[0:2] == [1, 22.3] - iti da toate elementele de la indexii [0, 2)
 
 a[:2] == [1, 22.3] - iti da toate elementele de la [0, 2) (adica mereu incepe de la 0)
 
-a[2:-1] == [4] - iti da elementu din stanga
+a[2:-1] == [4] - iti da elementu din stanga indexului 2
 
 a[2:] == [4, 0.1, 1, 2] - iti da toate elementele de la index pana la ultimul element, inclusiv
 
-schimbare elemente:
+
+Te gandesti asa la accesarile de mai sus [stanga : dreapta ]:
+Partea din stanga e de unde sa inceapa i in for
+Partea din dreapta e cate elemente sa parcurga incepand de la indexul din stanga si in ce directie
+
+Daca faci [ :index] i incepe automat de la index 0 si parcurge index elemente 
+Daca faci [index : ] i incepe de la index si merge pana la sfarsitul listei
+
+La indexul din dreapta spui cate elemente sa parcurga, nu pana la ce index 
+(adica o sa parcurga pana la index - 1 fiindca trebuie parcurs si indexul de start)
+
+
+Schimbare elemente:
 
 a[0] = 3
 printf(a[0]) - o sa fie 3
 
 
-metode lista:
+Metode lista:
 
 --inserare:
 
@@ -41,7 +53,7 @@ metode lista:
 
 .pop(index) - elimina elementul de la index
 .clear() - sterge toate elementele din lista
-.remove(valoare) - sterge un element indetic cu valoarea data
+.remove(valoare) - sterge un element identic cu valoarea data
 
 --altele:
 .copy() - returneaza o copie a listei

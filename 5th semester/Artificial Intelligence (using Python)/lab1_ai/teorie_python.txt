@@ -3,6 +3,7 @@
 
 -Indentatia e foarte importanta in python
 Ex
+
 if ....:
     ceva 1
     ceva 2
