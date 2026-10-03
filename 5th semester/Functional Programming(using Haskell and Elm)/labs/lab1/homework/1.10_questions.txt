@@ -1,0 +1,5 @@
+-A statement is a "function" that evaluates expressions to true or false and executes further lines if the expression is evaluated to true.
+
+-A recursive tail function is a function in which the last line of code that it executes it's calling herself, meaning that the function that made the recursive call completed its execution and there is no need to come back to it, further meaning that every function call will be iterated only once.
+
+-The main advantage of using a recursive tail function instead of a basic recursive function is that we don't need to come back to the same function address twice, compilers making optimizations based on that most of the time when we use recursive tail functions.

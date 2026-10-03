@@ -1,8 +1,7 @@
 Putem sa facem o absenta la lab fara sa o recuperam fizic, dar labul urmator trebuie sa stim daca ne intreaba ceva din labul la care n-am fost prezenti.
 
--O functie recursiva "tail" e o functie recursiva care nu depinde de rezultatul functiei recursive pe care o calluieste.
-Functia care apeleaza o alta functie recursiv ii da acesteia rezultatul actual(daca e cazul), iar call stack-ul nu se intoarce niciodata la ea.
-Deci call stack-ul o sa proeceseze fiecare apel de functie recursiva o data.
+O functie recursiva tail este o functie recursiva in care ultima linie de cod pe care o executa este apelul recursiv catre urmatoarea functie.
+Asta inseamna ca functia(1) ce a apelat urmatoarea functie(2) recursiv nu mai are nimic de facut, iar compilatorul poate sa optimizeze codul astfel incat nici sa nu mai fie tinuta adresa de return a functiei(1) care a facut apelul recursiv, deci se itereaza prin fiecare apel de functie doar o data.
 
 -In ELM iteratorii sunt de forma "for in for"
 Adica am vectorul [3, 2, 4, 5]
