@@ -1,0 +1,21 @@
+-Variabilele declarate in clasa care nu sunt in __init__ sunt variabile statice
+
+__init__(self, variabila1, variabila2) - asa se declara constructor in python
+    self.variabila1 = variabila1....
+
+-Se poate face override pe functii membre 
+-Nu se poate face overload pe functii
+
+- Clasa1(Clasa2, Clasa3, Clasa4...) - face mostenire, se poate face mostenire multipla
+
+
+-Nu existe membrii de clasa "private", toate sunt public by default.
+Daca vrei sa declari membrii de clasa private, ii numesti cu "__" la inceput
+
+Daca vrei dupa sa ii accesezi, folosesti: "_NumeClasa__variabila"
+
+def __add__(self, ...) - asa faci operator override la "+"
+def __eq__(self, ...) - asa faci operator override la "="
+
+
+
