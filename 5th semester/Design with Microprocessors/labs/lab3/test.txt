@@ -1,0 +1,135 @@
+In sapt 5 dam test
+
+Fie dam pe foaie, fie pe componente fizice
+
+
+Pe foaie o sa fie teorie si putin cod (cum setam pin, cum citim valoarea...)
+
+Rezistente pull up si pull down intrebare teorie
+
+Sa stim de registrii de care am vb in lab2 si cum putem sa setam mai multi de odata si registrii de care vb in lab3
+
+Catozi anozi SSD
+
+Register select zice daca se afiseaza date sau comenzi (ex clear() )
+
+
+Explicare cod
+
+#include <LiquidCrystal.h> //pinii 7 - register select, 6 - enable, ultimii 4 biti sunt pinii de date
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+
+
+lcd.setCursor(0, 0);    //pune pozitia pe lcd  si printeaza incepand de la linia 0, coloana 0
+lcd.print("Happy "); 
+
+lcd.setCursor(0, 1);    //pune pozitia pe lcd si printeaza incepand cu linia 1, coloana 0
+lcd.print("Sad ");
+
+
+Pentru caractere deja definite folosim print
+
+Pentru caractere definite de noi le afisam folosind lcd.write()
+
+lcd.createChar(0, happy); //Salvam caracterul "happy" pe byte-ul 0
+//Intr-un fel salvam un pointer la adresa 0 catre matricea caracterului "happy"
+
+lcd.createChar(1, sad); //Salvam caracterul "sad" byte-ul 1
+//Intr-un fel salvam un pointer la adresa 1 catre matricea caracterului "sad"
+
+cand facem "lcd.write(0)" trebuie sa facem cast la byte-ul 0, adica asa:
+lcd.write(byte(0))
+
+Cand scriem in orice alt byte putem scrie doar "lcd.write(i)"
+
+Avem 8 bytes pe care putem sa creem caractere (adica createChar)
+
+Pinii nu au neaparat o functionalitate specifica, pot sa fie folositi si setati cum vrei tu, dar pe shield-uri sunt deja "conectati" 
+
+
+
+lcd.begin(16, 2); //aici initializem cu cate coloane si linii avem pt fiecare lcd
+
+
+Intreruperi:
+
+INtreruperile opresc ce se executa si se sare la functie (un fel de function call)
+(intr-un fel se porneste program nou cu registrii noi si asa mai departe)
+
+interuperi interne - cand se fac doar cu microcontroler
+
+intreruperi externer - le triggeruim de la butoane (sau de la un In operator)
+
+avem niste conditii pentru intreruperi:
+
+de la mega pinii sunt: 20, 21, 19, 18, 2, 3 dedicati intreruperilor
+
+la uno: 2, 3(doar) 
+
+
+pentru a triggerui o intrerupere ne intereseaza 2 preconditii:
+
+-sa se activeze bitul care corespunde intreruperii (adica la mega avem 6 intreruperi posibile) - fiecare intrerupere are biti care fac anumite chestii
+
+-trebuie sa activam sistemul de intreruperi la modul global (e tot un bit dar la nivel global pt toate intreruperile)
+
+- sa activam bitii corecti pt intreruperi
+
+EIMASK - registru care il activam ca sa activam punctual intreruperea
+(Cum ar veni spunem: vezi ca vrem sa folosim intreruperea asta)
+
+In registru asta avem mai multi biti (bitii pentru interuperi)
+
+Fiecare intrerupere are un anumit bit asociat
+
+INT0 - pozitia care corespunde intreruperii0
+INT0 - pozitia pt intruperea 0
+
+EICRA - (External Interupt Control Register) - Setam starea la care vrem sa se activeze intreruperea (front ascended sau descended)
+
+ISC01, ISC00 - intreruperea 0
+(Practic am zis (cand primesti combinatia ISC01 sau ISC00 sa faci intreruperea 0)
+
+ISC11, ISC10 sunt intreruperile asociate intreruperii 1
+
+avem 2 biti pentru o intrerupere
+
+
+sei() - activeaza global intreruperile
+clear() - dezactivam
+
+
+putem sa dam intreruperilor functii declaram functia astfel: (semnatura)
+
+ISR(INT"nr_intrerupere"_vect)
+
+delay si milis nu putem folosi in intreruperi (fiindca in spate folosesc tot intreruperi) 
+si nu pot fi activate doua intreruperi simultan in arduino
+(orice fel de intrerupere nu pot sa fie activate in alte intreruperi)
+
+
+Fiecare intrerupere are 2 biti fiindca fac chestii diferite in functie de bitii activati:
+ex(nu e neaparat asa)
+bitul 00 - activeaza falling edge
+bitul 01 - activeaza rising edge
+bitul 10 - face ceva clear poate
+...
+
+
+sa facem director  nou pentru fiecare .ino
+
+exemplu use case pt interuperi externe:
+
+citesti non stop date si cand ai citit anumite date vrei sa nu mai citesti deloc alte date si sa procesezi datele citite atunci
+
+
+putem sa folosim doua metode de atasare a intreruperilor, ambele sunt in indrumator lab
+
+avem 5 moduri de declansare: rising, falling, high, low, change (pt functia aia attachInterrupt)
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+-Daca C e 1, se aprind segmentele cifrei unitatilor(cifra din dreapta)
+          0, se aprind segmentele cifrei din stanga
+
+Semnalele notate cu AA, AC... corespund anozilor
+
+Daca vrem sa afisam de exemplu cifra 3, conform fig 11.3 trebuie sa activam catozii asa:
+G - 1, F - 0, E - 0, D - 1, C - 1, B - 1, A - 1
