@@ -1,0 +1,5 @@
+Question 3.2.1
+
+Float in Elm works like floats in most languages (the IEEE 754 standard). When I tried 0/0 in the REPL I got NaN, which means "not a number". Then comparing 0/0 with 0/0 gave False. So NaN is not equal to anything, not even to itself, which is kind of strange but that's how floats are defined.
+
+This is a problem for reference equality. The idea was that with immutable data you can just check if two things point to the same place in memory and if they do, they are equal. But if you have a type with a Float field that holds NaN, then a value compared with itself should be False if you compare the contents, but reference equality would say True because it's the same object. So the two ways of checking equality give different answers, and the shortcut doesn't really work anymore when floats are involved.

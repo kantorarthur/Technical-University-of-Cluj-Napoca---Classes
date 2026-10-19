@@ -1,0 +1,6 @@
+Question 3.3.3
+
+Yes, Kotlin is a good example. In Kotlin a variable can't be null unless you say so by putting a question mark after the type. If something can be null, the compiler doesn't let you use it directly, you first have to check that it's not null or use some special operators for it. Swift, C# (newer versions) and TypeScript have something similar.
+
+For safeHeron in Kotlin, the function would just return a nullable number. If the sides are not valid it returns null, otherwise it returns the area. Whoever calls it is forced by the compiler to check for null before using the result.
+
