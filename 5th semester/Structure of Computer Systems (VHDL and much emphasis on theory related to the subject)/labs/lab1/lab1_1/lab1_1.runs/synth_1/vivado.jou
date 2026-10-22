@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct  8 12:18:44 2026
+# Process ID         : 40397
+# Current directory  : /home/pel/lab1_1/lab1_1.runs/synth_1
+# Command line       : vivado -log ripple_carry_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ripple_carry_adder.tcl
+# Log file           : /home/pel/lab1_1/lab1_1.runs/synth_1/ripple_carry_adder.vds
+# Journal file       : /home/pel/lab1_1/lab1_1.runs/synth_1/vivado.jou
+# Running On         : pel-GF65-Thin-10SDR
+# Platform           : Linuxmint
+# Operating System   : Linux Mint 22.3
+# Processor Detail   : Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+# CPU Frequency      : 4199.514 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16571 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18718 MB
+# Available Virtual  : 15069 MB
+#-----------------------------------------------------------
+source ripple_carry_adder.tcl -notrace

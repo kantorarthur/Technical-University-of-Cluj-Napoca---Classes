@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4_IP.gen/sources_1/ip/fifo32x64/fifo32x64_sim_netlist.vhdl" \
+"../../../../lab4_IP.gen/sources_1/ip/fp_sqrt/sim/fp_sqrt.vhd" \
+"../../../../lab4_IP.gen/sources_1/ip/fp_abs/sim/fp_abs.vhd" \
+"../../../../lab4_IP.gen/sources_1/ip/fp_subtractor/sim/fp_subtractor.vhd" \
+"../../../../../../../Desktop/lab4ssc/temperature_subtractor.vhd" \
+"../../../../../../../Desktop/lab4ssc/testbench_stimulus_file.vhd" \
+
+# Do not sort compile order
+nosort

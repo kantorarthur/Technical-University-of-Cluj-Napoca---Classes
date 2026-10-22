@@ -1,0 +1,7 @@
+Running: xsim.dir/div_restoring_behav/xsimk -simmode gui -wdb div_restoring_behav.wdb -simrunnum 0 -socket 37389
+Design successfully loaded
+Design Loading Memory Usage: 209880 KB (Peak: 211728 KB)
+Design Loading CPU Usage: 1210 ms
+Simulation completed
+Simulation Memory Usage: 357152 KB (Peak: 422688 KB)
+Simulation CPU Usage: 1230 ms

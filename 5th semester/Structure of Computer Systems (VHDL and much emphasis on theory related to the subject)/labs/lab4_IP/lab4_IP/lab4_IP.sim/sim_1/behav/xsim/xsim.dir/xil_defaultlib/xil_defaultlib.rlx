@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 16 2026
+11:12:08
+/home/pel/Desktop/lab4ssc/temperature_subtractor.vhd,1792647333,vhdl,,,,temperature_subtractor,,,,,,,,
+/home/pel/Desktop/lab4ssc/testbench_stimulus_file.vhd,1792661098,vhdl,,,,testbench_stimulus_file,,,,,,,,
+/home/pel/laburi Vivado/lab4_IP/lab4_IP/lab4_IP.gen/sources_1/ip/fifo32x64/fifo32x64_sim_netlist.vhdl,1792643793,vhdl,,,,\fifo32x64_xpm_counter_updn__parameterized0\;\fifo32x64_xpm_counter_updn__parameterized0_0\;\fifo32x64_xpm_counter_updn__parameterized1\;\fifo32x64_xpm_counter_updn__parameterized1_1\;fifo32x64;fifo32x64_axis_data_fifo_v2_0_18_top;fifo32x64_xpm_cdc_sync_rst;fifo32x64_xpm_fifo_axis;fifo32x64_xpm_fifo_base;fifo32x64_xpm_fifo_reg_bit;fifo32x64_xpm_fifo_rst;fifo32x64_xpm_memory_base,,,,,,,,
+/home/pel/laburi Vivado/lab4_IP/lab4_IP/lab4_IP.gen/sources_1/ip/fp_abs/sim/fp_abs.vhd,1792646923,vhdl,,,,fp_abs,,,,,,,,
+/home/pel/laburi Vivado/lab4_IP/lab4_IP/lab4_IP.gen/sources_1/ip/fp_sqrt/sim/fp_sqrt.vhd,1792647042,vhdl,,,,fp_sqrt,,,,,,,,
+/home/pel/laburi Vivado/lab4_IP/lab4_IP/lab4_IP.gen/sources_1/ip/fp_subtractor/sim/fp_subtractor.vhd,1792645979,vhdl,,,,fp_subtractor,,,,,,,,
+/home/pel/laburi Vivado/lab4_IP/lab4_IP/lab4_IP.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,

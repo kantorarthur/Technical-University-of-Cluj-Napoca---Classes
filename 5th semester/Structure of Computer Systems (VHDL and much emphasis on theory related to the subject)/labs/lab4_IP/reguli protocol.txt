@@ -1,0 +1,10 @@
+PRima regula:
+
+Cand senderu zice ca validu e pe 1 nu are voie sa dezactiveze validu.
+Pentru ca receiveru poate sa fie realizata combinational
+
+T-ready poate fi activat/dezactivat cand vrea
+
+Ca sa avem o citire corecta trebuie sa fie ambele active si rising edge
+
+

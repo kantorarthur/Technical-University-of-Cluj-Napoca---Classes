@@ -1,0 +1,9 @@
+sv xpm -i "../../../../../../vivado_bun/2026.1/data/rsb/busdef" --include "../../ipstatic/hdl" \
+"/home/pel/vivado_bun/2026.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/home/pel/vivado_bun/2026.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"/home/pel/vivado_bun/2026.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

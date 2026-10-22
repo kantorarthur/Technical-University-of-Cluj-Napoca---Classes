@@ -1,0 +1,4 @@
+citire si scriere in fisier, clasa, functie str pt afisare (gen override pe printf)
+
+
+
