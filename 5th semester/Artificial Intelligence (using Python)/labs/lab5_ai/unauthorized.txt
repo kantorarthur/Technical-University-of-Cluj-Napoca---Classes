@@ -1,0 +1,4 @@
+Plane [jets25, 70] - numar de verificare gresit
+Plane [xyzw12, 90] - prefix necunoscut
+Plane [aero10, 40] - numar de verificare gresit
+Plane [wing5a, 60] - format incorect

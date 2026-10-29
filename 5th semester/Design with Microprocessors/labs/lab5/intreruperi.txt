@@ -1,0 +1,62 @@
+#include "avr/interrupt.h"
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+volatile int int0_activat;
+volatile int int1_activat;
+
+
+void setup()
+{
+    lcd.begin(16, 2);
+    
+    pinMode(21, INPUT); //INT0  
+    pinMode(20, INPUT); //INT1
+
+    EIMASK |= (1 << INT0);
+    EIMASK |= (1 << INT1);
+
+    EICRA |= (1 << ISC0);
+    EICRA |= (1 << ISC1);
+
+    sei();
+}
+
+void loop()
+{
+    if(int0_activat)
+    {
+        lcd.clear();
+        int0_activat = false;
+    }
+    if(int1_activat)
+    {
+        lcd.clear();
+        int1_activat = false;
+    }
+    
+    delay(1000);
+    lcd.setCursor(0, 0);
+    lcd.print("intr dez");
+}
+
+ISR(INT0_vect)
+{
+    lcd.setCursor(0, 0);
+    lcd.clear();
+    lcd.print("INT0 actv");
+    int0_activat = true;
+}
+
+ISR(INT0_vect)
+{
+    lcd.setCursor(0, 0);
+    lcd.clear();
+    lcd.print("INT1 act");
+    int0_activat = true;
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+forward - cand merg datele de la input layer la output layer
+
+backwards - cand merg datele de la input layer la output layer si apoi se calculeaza un loss si se propaga acel loss de la output layers inapoi spre input layers iar neuronii care sunt in layere isi updateaza lossu
+
+layere - seturi de neuroni
+
+neuronal network - totalitatea neuronilor (nr de neuorni il setezi inainte)
+
+
+in djikstra bagi in nodu ala (in care esti acum) suma celui mai scurt drum (sau care te intereseaza pe tine)

@@ -1,0 +1,9 @@
+avem de desenat un caracter si se misca stanga dreapta pe butoane pe LCD (adica trebuie sa shiftammmmmm)
+
+
+trebuie sa folosim intreruperi externe sau interne (cand se apasa face x y z)
+
+
+acum scriu ce facem la lab
+
+divizare de frecventa

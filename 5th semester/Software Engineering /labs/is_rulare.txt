@@ -1,0 +1,128 @@
+java -cp bin ClientConsole localhost 5555
+
+java -cp bin EchoServer 5555
+
+
+a) a) este implementat și testat.
+
+Ce am făcut: în ChatClient.java am suprascris metoda connectionException(Exception). OCSF o apelează când firul clientului pierde conexiunea cu serverul, de exemplu la oprirea serverului. Metoda afișează „The server has shut down. Terminating client." și apelează quit(), care închide clientul.
+
+De ce așa: în AbstractClient.run(), dacă citirea de la server eșuează și clientul nu era deja în curs de oprire (readyToStop e fals), se apelează connectionException. OCSF nu e modificat.
+
+Test: am pornit serverul și un client, am trimis un mesaj, apoi am oprit serverul. Clientul a afișat mesajul de oprire și s-a închis singur:
+> hi
+> The server has shut down. Terminating client.
+
+
+
+
+b) este implementat și testat.
+
+Ce am făcut: în main din ClientConsole.java citesc acum portul din args[1], la fel cum se citea hostul din args[0]. Dacă lipsește (ArrayIndexOutOfBoundsException) sau nu e un număr valid (NumberFormatException), se folosește DEFAULT_PORT (5555). Am actualizat și comentariul Javadoc al metodei.
+
+Cum se folosește:
+
+
+java -cp bin ClientConsole localhost 6000   # port 6000
+java -cp bin ClientConsole localhost        # port implicit 5555
+Test: am pornit două servere, pe 6000 și pe 5555.
+
+Clientul cu localhost 6000 a ajuns la serverul de pe 6000 („pe 6000").
+Clientul fără port a ajuns la serverul de pe 5555 („implicit").
+Mesajele null din loguri vin de la intrarea dată prin pipe, care se termină (EOF), nu din cod.
+
+Trec la c), mesajele de conectare și deconectare în EchoServer?
+
+
+
+
+
+c) este implementat și testat.
+
+Ce am făcut: în EchoServer.java am suprascris trei metode-cârlig din AbstractServer, fără să ating OCSF:
+
+clientConnected(ConnectionToClient) afișează Client connected: localhost (127.0.0.1). Tot aici salvez adresa clientului cu client.setInfo("address", ...).
+clientDisconnected(ConnectionToClient) afișează Client disconnected: ... la o închidere normală.
+clientException(ConnectionToClient, Throwable) afișează același mesaj când clientul cade brusc, de exemplu cu kill -9 sau la o pierdere de rețea. Fără ea, o cădere bruscă ar fi rămas fără mesaj.
+De ce setInfo: la deconectare, socketul clientului e deja închis și client.toString() returnează null. Prima mea variantă afișa deci „Client disconnected: null". Acum citesc adresa salvată la conectare cu getInfo("address").
+
+Test (server pe portul 7000):
+
+
+Server listening for connections on port 7000
+Client connected: localhost (127.0.0.1)
+Client disconnected: localhost (127.0.0.1)   <- client oprit brusc cu kill -9
+Client connected: localhost (127.0.0.1)
+Message received: hi from localhost (127.0.0.1)
+Client disconnected: localhost (127.0.0.1)   <- client închis normal
+Cele trei cerințe, a), b) și c), sunt acum gata. Am oprit serverele de test, așa că portul 5555 e liber.
+
+
+
+cum testez
+5:11 PM
+Rulează din /home/pel/proiecte_is/code, în trei terminale. Recompilează mai întâi:
+
+
+javac -d bin ocsf/client/*.java ocsf/server/*.java simplechat1/*.java simplechat1/client/*.java simplechat1/common/*.java
+a) Clientul reacționează la oprirea serverului
+Terminal 1: java -cp bin EchoServer 5555
+Terminal 2: java -cp bin ClientConsole localhost 5555
+Scrie ceva în client, ca să vezi că merge.
+În terminalul 1 apasă Ctrl+C.
+Clientul trebuie să afișeze > The server has shut down. Terminating client. și să se închidă singur.
+
+b) Portul din linia de comandă
+Terminal 1: java -cp bin EchoServer 6000
+Terminal 2: java -cp bin ClientConsole localhost 6000. Scrie un mesaj și verifică că ajunge la server.
+Fără port: oprește serverul și pornește-l cu java -cp bin EchoServer (portul 5555). Apoi rulează java -cp bin ClientConsole localhost. Trebuie să se conecteze la 5555.
+c) Mesaje de conectare și deconectare
+Terminal 1: java -cp bin EchoServer 5555
+Terminal 2: java -cp bin ClientConsole localhost 5555. În terminalul 1 trebuie să apară Client connected: localhost (127.0.0.1).
+Deschide un al doilea client în terminalul 3, ca să vezi mai multe conexiuni.
+Închide un client cu Ctrl+C. În server trebuie să apară Client disconnected: localhost (127.0.0.1).
+Dacă primești „Could not listen for clients!", portul e ocupat de un server rămas pornit. Verifică cu ss -ltnp | grep 5555 și oprește-l cu kill <pid>.
+
+
+
+
+
+
+#quit, #logoff, #sethost, #setport, #login, #gethost și #getport sunt implementate și testate. Erorile loggedIn cannot be resolved din IDE sunt vechi. Au apărut după prima editare, înainte să adaug câmpul. Codul compilează și rulează corect.
+
+Ce am făcut
+
+ChatClient.java: handleMessageFromClientUI verifică dacă mesajul începe cu #. Dacă da, îl trimite la o metodă nouă, handleCommand, și nu mai ajunge la server. Orice altceva se trimite ca înainte.
+Comenzile:
+#quit apelează quit(), care închide conexiunea și apoi ieșe din program.
+#logoff închide conexiunea fără să iasă. Dă eroare dacă ești deja deconectat.
+#sethost <host> și #setport <port> apelează setHost și setPort. Dau eroare dacă ești conectat. #setport abc afișează utilizarea corectă.
+#login redeschide conexiunea. Dă eroare dacă ești deja conectat sau dacă serverul nu răspunde.
+#gethost și #getport afișează valorile curente.
+Orice alt #... afișează Unknown command.
+Câmp propriu loggedIn: nu folosesc isConnected() din OCSF. Imediat după closeConnection() returna încă true, așa că al doilea #logoff consecutiv răspundea „Logged off" în loc de eroare. Acum loggedIn se actualizează în constructor, la #login și în cârligul connectionClosed().
+ClientConsole.java: când readLine() returnează null (sfârșit de intrare, de exemplu Ctrl+D), clientul se închide curat. Înainte intra în buclă infinită și trimitea null la server. Nu ți-am cerut asta, dar altfel ar fi dat NullPointerException la message.startsWith.
+Test, cu două servere (7000 și 7001) și o secvență de comenzi:
+
+
+> Current host: localhost
+> Current port: 7000
+> Error: you must log off before changing the host.
+> Error: you are already logged in.
+> Logged off from the server.
+> Error: you are already logged off.
+> Host set to 127.0.0.1
+> Port set to 7001
+> Usage: #setport <port>
+> Logged in to 127.0.0.1:7001
+> Unknown command: #foo
+Serverul 7000 a primit „salut" și apoi deconectarea. După #setport 7001 și #login, serverul 7001 a primit conectarea și „mesaj pe 7001". #quit a închis clientul cu exit 0.
+
+Pentru testare manuală, pornești java -cp bin EchoServer 5555 într-un terminal și java -cp bin ClientConsole localhost 5555 în altul. Scrii apoi comenzile direct în client.
+
+
+java -cp bin ClientConsole localhost 5555
+
+
+
+si dupa dai #gethost #getport .... bam bam in client

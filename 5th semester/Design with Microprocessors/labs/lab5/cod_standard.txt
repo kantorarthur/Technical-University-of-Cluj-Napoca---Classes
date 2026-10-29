@@ -1,0 +1,38 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+int button_cnt = 0; 
+
+const int button_pin = 11;
+//pinu fara A de pe placuta pe care ii butonu
+
+const int led_1 = 7;
+//zicem ca ii un led_1 conectat la pin7
+
+void setup()
+{
+  lcd.begin(16, 2);
+
+  pinMode(button_pin, INPUT_PULLUP);
+
+  lcd.print("Val cnt: ");
+  lcd.print(button_cnt);
+}
+
+void loop()
+{
+  bool apasat = (digitalRead(button_pin) == LOW);
+  
+  if(apasat)
+  {
+    ++button_cnt;
+    lcd.clear();
+    lcd.print("Val cnt e: ");
+    lcd.setCursor(0, 1);
+    lcd.print(button_cnt);
+    digitalWrite(led_1, HIGH);
+    apasat = false;
+  }
+}
+
+
