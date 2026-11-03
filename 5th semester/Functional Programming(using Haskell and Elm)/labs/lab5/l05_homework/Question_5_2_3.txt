@@ -1,0 +1,5 @@
+Question 5.2.3
+
+To rewrite a function that uses composition so it uses only pipelines, you give the function an explicit argument and then send that argument through the same functions one after another with the forward pipe. If the original used the backward composition operator, the functions run from right to left, so you just put them in the reverse order in the pipeline, or you can use the backward pipe with the argument at the very end.
+
+To go the other way and rewrite a function that uses pipelines so it uses only composition, you drop the value that is being piped in and join the functions together in the same order with the forward composition operator. If the pipeline was written with the backward pipe, you join them with the backward composition operator instead. The result is a function that no longer mentions its argument and simply waits for it.
