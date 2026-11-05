@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 16 2026
+11:12:08
+/home/pel/laburi Vivado/lab6/sim/tb_saturated_window_adder.vhd,1793854453,vhdl,,,,tb_saturated_window_adder,,,,,,,,
+/home/pel/laburi Vivado/lab6/src/saturated_window_adder.vhd,1793854453,vhdl,/home/pel/laburi Vivado/lab6/sim/tb_saturated_window_adder.vhd,,,saturated_window_adder,,,,,,,,
+/home/pel/laburi Vivado/lab6/src/saturator.vhd,1793854453,vhdl,,,,saturator,,,,,,,,
+/home/pel/laburi Vivado/lab6/src/sliding_window_adder.vhd,1793854453,vhdl,,,,sliding_window_adder,,,,,,,,

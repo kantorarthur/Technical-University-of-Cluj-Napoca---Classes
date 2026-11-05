@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pel/laburi Vivado/lab6/src/saturated_window_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'saturated_window_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pel/laburi Vivado/lab6/src/saturator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'saturator'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pel/laburi Vivado/lab6/src/sliding_window_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sliding_window_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pel/laburi Vivado/lab6/sim/tb_saturated_window_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_saturated_window_adder'
