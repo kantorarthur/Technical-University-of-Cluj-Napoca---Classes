@@ -1,0 +1,113 @@
+1. Totul se scrie pe ACLK front crescator
+
+2. ARESETn - reset activ pe 0
+
+TDATA - Data de la sender
+TVALID - Valid de la sender
+
+TREADY - Valid(ready) de la receiver
+
+3. Transferul are loc cand:
+ACLK - Front crescator
+TREADY - 1
+TVALID - 1
+
+4. Ordinea e libera:
+TVALID inainte de TREADY
+TREADY inainte de TVALID
+TREADY si TVALID pe acelasi ciclu de ceas
+----
+Toate sunt valide
+
+
+
+REGULI:
+Regula 1 -- Daca senderul a pus TVALID = 1, atunci TDATA si TVALID raman neschimbate pana la 
+transfer
+
+Regula 2 -- Senderul NU are voie sa astepte TREADY ca sa puna TVALID = 1 
+(PE SCURT -- SENDER PUNE TVALID CAND POATE)
+
+Regula 3 -- Receiverul ARE voie sa astepte TVALID inainte sa puna TREADY
+
+Regula 4 -- Receiverul poate retrage TREADY
+
+
+
+LAB2 
+Full Adder formula: SI = xi xor yi xor ci
+
+Half Adder - Is implementate cu mai multe full adder
+
+LAB 3
+Shift and Add Multiplication
+
+Q = 1 --> A = A + B
+
+(si daca Q = 0  si daca = 1)
+SLL B
+SLR A
+N <= N - 1
+
+daca N == 0 ne oprim
+altfel facem iar
+
+practic se face A * B
+
+
+TVALID --> Inseamna ca senderu e gata sa trimita
+TREADY --> Inseamna ca receiveru e gata sa primeasca
+
+
+1. Daca TVALID == 1 -- Nu se mai schimbe pana nu se face transfer
+2. Transfer se face cand TVALID == 1, TREADY == 1 si ACLK Front Crescator
+3. ARESET == 0 -- reset activ pe 0
+4. ACLK == RISING EDGE, TVALID == 1, TREADY == 1 --> Transfer
+
+5. Senderul nu are voie sa astepte dupa TREADY == 1 ca sa faca TVALID == 1
+TREBUIE SA FACA TVALID == 1 LA PRIMU MOMENT CAND POATE
+
+DECI PE SCURT!!!!
+SENDERU TREBUIE SA ZICA MEREU CAND DATA E GATA
+RECEIVERU NU TREBUIE SA ZICA MEREU CAND E READY SA PRIMEASCA DATE
+
+DATA TVALID == 1 -> NU SE MAI SCHIMBA
+
+TREADY se poate schimba din 1 in 0
+TVALID NU se poate schimba din 1 in 0
+
+
+TREADY SI TVALID se pot assertui in acelasi ciclu de ceas
+(deci nu conteaza chestia asta cat timp se respecta regulile)
+
+
+LAB5
+
+1. Dupa reset, modlul porneste in S_recv
+2. Modului e mereu DOAR o stare:
+S_recv sau S_send -- Niciodata ambele
+
+3.S_recv -- TREADY -- are inputs_valid
+
+4. S_recv -- TVALID la iesire == 0
+
+5. in S_recv rezultatul se calculeaza si scrie in results
+
+6. S_recv -> S_send cand INPUTS_VALID == 1(handshake)
+
+
+7. In S_send -- TValid la iesire == 1
+
+8 S_send - TREADY = 0 
+
+9. S_send -> result nu se modifica --> TDATA ramane stabil
+
+10. S_send -> S_recv cand TREADY == 1 (handshake)
+
+11. TVALID depinde doar de stare, niciodata de TREADY
+
+
+ 
+
+
+
