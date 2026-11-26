@@ -1,0 +1,43 @@
+se da formula:
+
+2 way adresable
+
+cpu e adresabil pe 8 biti
+
+tagu e de 4
+
+s = 2
+
+w = 2
+
+
+tag - 
+
+k - in cate way-uri se imparte cacheu
+
+daca stim ca cpu e pe 8 biti -> 2^8 entries
+2^8 bits -> 256 bits
+
+2^w = 2 ^ 2 * bytes = 4 bytes
+
+number of blocks = 256 / 4 = 64
+
+
+
+number of sets = 2^s = 2^2 = 4
+
+daca avem 2 way -> o sa avem 2 linii de cache intr-un set 
+-> number_of_lines = k * number_of_sets = 2 * 4 = 8 lines
+
+
+
+marime data = numar de seturi(linii) * numar de way-uri * 2^w * bytes
+
+
+
+marime tag = numar de seturi(linii) * t + v(1 bit) + dirty(1 bit -> daca este, in lab de ex nu e)
+
+
+w - cati biti avem nevoie ca sa adresam toate seturile (set 1, set2... ca sa selectam in ce set bagam)
+
+
